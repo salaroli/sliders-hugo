@@ -1,7 +1,6 @@
-@import "imports/reset";
-
-body{
-  font-family: sans-serif;
-  font-size: 1em;
-  text-align: center;
-}
+@import 'breakpoint-sass/breakpoint';
+@import 'utilities/zndex';
+@import 'base/zndex';
+@import 'state/zndex';
+@import 'modules/zndex';
+@import 'screens/zndex';

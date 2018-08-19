@@ -1,0 +1,128 @@
+/* Base Styles -------------------- */
+
+* {
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+    // border: solid 1px red;
+}
+html {
+    font-size: $base__font-size;
+    // background-color: cores(primary);
+}
+body {
+    font-family: $font-family;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    color: cores(accent);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ol {
+    margin-left: 30px;
+}
+p,
+li {
+    font-weight: $font-weight--regular;
+    font-size: 1em;
+    line-height: em(20px, 14px);
+}
+h2 {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: $font-weight--heavy;
+}
+h3 {
+    font-size: 1.5em;
+}
+
+label {
+    display: block;
+}
+
+input[type="checkbox"] {
+    display: none;
+    & + label {
+        display: block;
+        margin: 10px 20px 20px;
+        padding-left: 28px;
+        position: relative;
+        font-size: 16px;
+        @include pseudo('before', 20px, 20px) {
+            border: cores(dark--secondary) 2px solid;
+            left: 0;
+            top: 0;
+            border-radius: 2px;
+        }
+    }
+    &:checked + label:before {
+        // @extend .ion-android-done;
+        background-color: cores(accent);
+        border: cores(accent) 2px solid;
+        color: cores(white);
+        text-align: center;
+        font-size: 20px;
+        line-height: 18px;
+    }
+}
+
+input[type2="radio"] {
+    display: none;
+    & + label {
+        display: block;
+        margin: 10px 20px 20px;
+        padding-left: 28px;
+        position: relative;
+        font-size: 16px;
+        @include pseudo('before', 20px, 20px) {
+            border: cores(dark--secondary) 2px solid;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+        }
+    }
+    &:checked + label:before {
+        box-shadow:inset 0px 0px 0px 3px cores(white);
+        background-color: cores(accent);
+        border: cores(accent) 2px solid;
+        content: "";
+    }
+}
+
+input[type="radio"] {
+    display: none;
+    & + label {
+        display: block;
+        margin: 10px 20px 20px;
+        padding-left: 28px;
+        position: relative;
+        font-size: 16px;
+        @include pseudo('before', 20px, 20px) {
+            border: cores(dark--secondary) 2px solid;
+            left: 0;
+            top: 0;
+            border-radius: 50%;
+        }
+    }
+    &:checked + label:before {
+        box-shadow:inset 0px 0px 0px 3px cores(white);
+        background-color: cores(accent);
+        border: cores(accent) 2px solid;
+    }
+}
