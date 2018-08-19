@@ -1,2 +1,10 @@
 node_modules/
 dist/
+bower_components
+.sass-cache
+*.swp
+*.swo
+*.psd
+*.plist
+tags
+Gemfile.lock
