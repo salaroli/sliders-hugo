@@ -1,11 +1,6 @@
 // GoogleFont
 $font-url--google          :'https://fonts.googleapis.com/css?family=Roboto';
 
-$susy: (
-  columns: 12,
-  gutters: 1/4,
-);
-
 // Font Stacks
 // $font-family      : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family      : 'Roboto', Helvetica, Arial, sans-serif;
@@ -21,14 +16,16 @@ $font-weight--semibold       : 600;
 $font-weight--bold           : 700;
 $font-weight--heavy          : 900;
 
+$padding                     : 16px;
+
 // $font-weight--regular         : normal;
 // $font-weight--bold           : bold;
 
 //Color
 
-$color-primary      : #0896e6;
+$color-primary      : rgb(179, 142, 93);
 $color-accent       : #ff5c64;
-$color-base         : rgb(238,238,238);
+$color-base         : rgb(247, 241, 231);
 
 $color-white        : #fff;
 $color-black        : black;
@@ -39,6 +36,7 @@ $color-dark--secondary       : rgba(0,0,0,0.54);
 $color-dark--disabled       : rgba(0,0,0,0.38);
 $color-dark--24       : rgba(0,0,0,0.24);
 $color-dark--12       : rgba(0,0,0,0.12);
+$color-dark--6        : rgba(0,0,0,0.06);
 
 $color-light--primary       : rgba(255,255,255,1);
 $color-light--secondary       : rgba(255,255,255,0.70);
@@ -125,6 +123,12 @@ $tons: (
     shade:  lum($color-dark--12, -30),
     tint:   lighten($color-dark--12, 15%),
     pastel: lighten($color-dark--12, 40%)
+  ),
+  dark--6: (
+    base:   $color-dark--6,
+    shade:  lum($color-dark--6, -30),
+    tint:   lighten($color-dark--6, 15%),
+    pastel: lighten($color-dark--6, 40%)
   ),
   light--primary: (
     base:   $color-light--primary,

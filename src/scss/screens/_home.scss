@@ -1,0 +1,286 @@
+* {
+    // @extend .test--border;
+
+}
+html {
+    // color: white;
+    // background-color: black;
+}
+
+.menu {
+    transition: right 0.2s ease-out;
+    z-index: 1000000000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0; 
+    height: 100vh;
+    width: 100vw;
+    right: -100vw;
+    background-color: cores(dark--primary);
+    border-bottom: 10px solid cores(primary);
+    color: white;
+    align-items: center;
+    @include m(active) {
+        right: 0;
+    }
+    @include e(img) {
+        align-self: flex-end;
+        margin-right: $padding;
+    }
+    ul {
+        margin-top: 3em;
+        text-align: center;
+        li {
+            margin-top: 2em;
+            a {
+                @include btn-reset() {
+                    font-weight: $font-weight--bold;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+.navbar {
+    color: white;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px $padding 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/img/IMG_hero.png);
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(/img/logo_white.png);
+    width: 100px;
+    height: 100px;
+}
+
+.dehaze {
+    justify-self: end;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(/img/dehaze.png);
+    width: 20px;
+    height: 20px;
+}
+
+.hero-text {
+    grid-column: 1 / -1;
+}
+
+.seta {
+    position: absolute;
+    background-color: cores(primary);
+    height: 50px;
+    box-shadow: 0px 2px 2px 0px cores(dark--24),
+                0px 0px 2px 0px cores(dark--12);
+    width: 50px;
+    border-radius: 100000px;
+    bottom: -5px;
+    right: calc(50% - 25px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30% 30%;
+    background-image: url(/img/arrow.png);
+}
+
+.burger {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(/img/burger.png);
+    width: calc(100vw - 90px);
+    height: calc(100vw - 90px);
+    margin: 30px auto 10px;
+}
+
+h2 {
+    color: cores(primary);
+    margin: 1em $padding 0;
+    font-size: 32px;
+    line-height: 1.2em;
+}
+
+p {
+    margin: 1em $padding;
+}
+
+.alert {
+    background-color: cores(base);
+    margin: 1em $padding;
+    padding: 1em 5px;
+    font-size: 0.8em;
+    border-radius:  5px;
+    text-align: center;
+}
+
+.horizontal-line {
+    margin: 1em $padding;
+    border-bottom: 1px solid cores(dark--12);
+}
+
+.ingrediente {
+    position: relative;
+    margin: 1em 50px;
+    @include e(num) {
+        position: absolute;
+        font-size: 5em;
+        font-weight: $font-weight--heavy;
+        left: -32px;
+        top: -16px;
+        z-index: -1000px;
+        color: cores(dark--12);
+    }
+    @include e(title) {
+        color: cores(primary);
+        font-size: 1.5em;
+        font-weight: $font-weight--bold;
+        margin-bottom: 0.5em;
+    }
+}
+
+h3 {
+    color: cores(primary);
+    text-align: center;
+    margin: 2em 0 0.5em;
+}
+
+.cardapio {
+    background-color: cores(dark--6);
+    padding:  50px $padding 10px;
+}
+
+.alimento {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row-gap: 10px;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 25px 10px;
+    margin-bottom: 10px;
+    span {
+        color:  cores(dark--disabled);
+    }
+    @include m(original) {
+        @extend .alimento;
+        border: 2px solid cores(primary);
+    }
+    @include e(title) {
+        font-weight: $font-weight--bold;
+        font-size: 1.1em;
+    }
+    @include e(price) {
+        font-weight: $font-weight--bold;
+        font-size: 1.1em;
+        justify-self: end;
+    }
+    @include e(description) {
+        grid-column: 1 / -1;
+        font-size: 0.7em;
+        font-weight: $font-weight--bold;
+        color: cores(dark--24);
+        text-transform: uppercase;
+    }
+    @include e(extra) {
+        font-size: 0.7em;
+        font-weight: $font-weight--bold;
+        color: cores(dark--24);
+        text-transform: uppercase;
+    }
+    @include e(fritas) {
+        grid-column: 1 / -1;
+        font-weight: $font-weight--bold;
+        font-size: 1.1em;
+        text-align: center;
+    }
+}
+
+h4 {
+    margin: 2em $padding 1em;
+    font-size: 1.5em;
+    font-weight: $font-weight--bold;
+}
+
+.gallery {
+    position: relative;
+    @include e(images) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        z-index: 100;
+        @include pseudo(after, 100%, 100%) {
+            background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
+        }
+    }
+    @include e(text) {
+        z-index: 10000;
+        position: absolute;
+        color: white;
+    }
+    @include e(social) {
+        display: flex;
+        margin: $padding;
+        img {
+            width: 24px;
+            margin-right: $padding;
+        }
+    }
+}
+
+.map {
+    padding: 1em $padding;
+    div {
+        margin:  1em 0;
+        font-size: 0.7em;
+        padding-left: 24px;
+    }
+    @include e(rua) {
+        @include pseudo(before, 14px, 14px) {
+            background-image: url(/img/rua.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            left: $padding;
+        }
+    }
+    @include e(telefone) {
+        @include pseudo(before, 14px, 14px) {
+            background-image: url(/img/telefone.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            left: $padding;
+        }
+    }
+    @include e(data) {
+        @include pseudo(before, 14px, 14px) {
+            background-image: url(/img/data.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            left: $padding;
+        }
+    }
+}
+
+.footer {
+    background-color: cores(dark--6);
+    img {
+        margin: 2em auto;
+    }
+    p {
+        color: cores(dark--secondary);
+        font-size: 0.7em;
+        text-align: center;
+    }
+}
