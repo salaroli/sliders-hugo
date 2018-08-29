@@ -5,12 +5,9 @@
         <img src="/img/close.png" alt=""/>
     </div>
     <ul>
-        <li><a href="/">Início</a></li>
-        <li><a href="/#conceito">Conceito</a></li>
-        <li><a href="/#cardapio">Cardápio</a></li>
-        <li><a href="/#delivery">Delivery</a></li>
-        <li><a href="/#contato">Contato</a></li>
-        <li><a href="/#localizacao">Localização</a></li>
+        {{ range .Site.Data.navbar.menu }}
+        <li><a href="{{ .url }}">{{ .title }}</a></li>
+        {{ end }}
     </ul>
 </div>
 
@@ -21,15 +18,13 @@
         </div>
         <img class="navigation__dehaze" src="/img/dehaze.png" alt=""/>
         <ul>
-            <li><a href="/">Início</a></li>
-            <li><a href="/#conceito">Conceito</a></li>
-            <li><a href="/#cardapio">Cardápio</a></li>
-            <li><a href="/#contato">Contato</a></li>
-            <li><a href="/#localizacao">Localização</a></li>
+            {{ range .Site.Data.navbar.menu }}
+            <li><a href="{{ .url }}">{{ .title }}</a></li>
+            {{ end }}
         </ul>
     </div>
     <div class="wrapper">
-        <h1 class="header__text">Para todos os gostos, para todas as fomes, do tamanho certo.</h1>
+        <h1 class="header__text">{{ .Params.herotext | markdownify }}</h1>
     </div>
     <div class="seta"></div>
 </div>
@@ -40,42 +35,24 @@
         <img src="/img/burger.png" alt=""/>
     </div>
     <div class="descricao">
-        <h2>Burger tradicional, simples, clássico!</h2>
-        <p>Slider é uma receita de burger americana, é a perfeita combinação feita com apenas quatro ingredientes.<br>
-        <br>
-        O segredo está em sua preparação equilibrada - cada ingrediente tem a hora de entrar e, quando juntos, são cozidos e aromatizados com o vapor da cebola.</p>
-        
-        <div class="alert"><b>Vai a dica</b> - mantenha sempre a cebola!</div>
+        <h2>{{ .Params.calltoaction | markdownify }}</h2>
+        {{ .Content }}
+        <div class="alert">{{ .Params.dica | markdownify }}</div>
     </div>
 </div>
 
 <div class="horizontal-line"></div>
 
 <div class="receita">
+
+    {{ range $index, $content := .Site.Data.receita.ingredientes }}
     <div class="ingrediente">
-        <div class="ingrediente__num">1</div>
-        <div class="ingrediente__title">Pão</div>
-        Pão fofinho, leve, no tamanho certo!
+        <div class="ingrediente__num">{{ add $index 1 }}</div>
+        <div class="ingrediente__title">{{ $content.name }}</div>
+        {{ $content.description }}
     </div>
-    
-    <div class="ingrediente">
-        <div class="ingrediente__num">2</div>
-        <div class="ingrediente__title">Cebola</div>
-        O segredo de tudo!<br>
-        É o vapor da cebola que cozinha a carne na medida certa, derrete o queijo e aromatiza o pão!
-    </div>
-    
-    <div class="ingrediente">
-        <div class="ingrediente__num">3</div>
-        <div class="ingrediente__title">Carne</div>
-        Um fino disco de carne de um blend único para a suculência perfeita.
-    </div>
-    
-    <div class="ingrediente">
-        <div class="ingrediente__num">4</div>
-        <div class="ingrediente__title">Queijo</div>
-        Uma fatia do queijo que melhor combina com os outros 3 ingredientes juntos!
-    </div>
+    {{ end }}
+
 </div>
 
 <h3 id="cardapio">Cardápio</h3>
@@ -84,74 +61,126 @@
 
     <div class="cardapio__wrapper">
 
-        <div class="alimento--original">
-            <!-- <div class="alimento__title">Slider</div> -->
-            <div class="alimento__title"><span>Slider</span> Original</div>
-            <div class="alimento__price">R$ 8,00</div>
-            <div class="alimento__description">pão/ burger/ queijo/ cebola</div>
-        </div>
-        
-        <div class="alimento">
-            <div class="alimento__title"><span>Slider</span> Americano</div>
-            <div class="alimento__price">R$ 10,00</div>
-            <div class="alimento__description">pão/ burger/ queijo/ cebola/ picles</div>
-        </div>
-        
-        <div class="alimento">
-            <div class="alimento__title"><span>Slider</span> Salada</div>
-            <div class="alimento__price">R$ 10,00</div>
-            <div class="alimento__description">pão/ burger/ queijo/ cebola/ rúcula/ toMATE</div>
-        </div>
-        
-        <div class="alimento">
-            <div class="alimento__title"><span>Slider</span> Bacon</div>
-            <div class="alimento__price">R$ 10,00</div>
-            <div class="alimento__description">pão/ burger/ queijo/ cebola/ bacon</div>
-        </div>
-        
-        <h3>Extras</h3>
-        
-        <div class="alimento">
-            <div class="alimento__extra">pão brioche | salada | bacon | picles</div>
-            <div class="alimento__price">R$ 2,00</div>
-        </div>
-        
-        <div class="alimento">
-            <div class="alimento__extra">maionese (da casa - contém lactose)</div>
-            <div class="alimento__price">R$ 2,50</div>
-        </div>
-        
-        <h3>Bebidas</h3>
-        
-        <div class="alimento">
-            <div class="alimento__title">Chopp Larger</div>
-            <div class="alimento__price">R$ 10,00</div>
-            <div class="alimento__description">( burgman ) - 400 ml</div>
-        </div>
-        
-        <div class="alimento">
-            <div class="alimento__title">Chopp IPA</div>
-            <div class="alimento__price">R$ 12,00</div>
-            <div class="alimento__description">( burgman ) - 400 ml</div>
-        </div>
-        
-        <div class="alimento__group">
-            <div>
-                <h3>Fritas</h3>
-                <div class="alimento">
-                    <div class="alimento__fritas">R$ 9,00</div>
+        {{ range .Site.Data.cardapio.alimentos }}
+            {{ if .title }}
+            <h3>{{ .title }}</h3>
+            {{ else if .group }}
+                <div class="alimento__group">
+                    {{ range .group }}
+                    <div>
+                        <h3>{{ .title }}</h3>
+                        <div class="alimento">
+                            {{ if .singleprice }}
+                            <div class="alimento__single-price">R$ {{ .singleprice | lang.NumFmt 2 }}</div>
+                            {{ end }}
+                            {{ if .name }}
+                                <div class="alimento__title">{{ .name | safeHTML }}</div>
+                            {{ end }}
+                            {{ if .extra }}
+                                <div class="alimento__extra">{{ .extra }}</div>
+                            {{ end }}
+                            {{ if .price }}
+                                <div class="alimento__price">R$ {{ .price | lang.NumFmt 2 }}</div>
+                            {{ end }}
+                            {{ if .description }}
+                                <div class="alimento__description">{{ .description }}</div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
                 </div>
-            </div>
-            <div>
-                <h3>Sobremesa</h3>
-                <div class="alimento">
-                    <div class="alimento__extra">bolo gelado</div>
-                    <div class="alimento__price">R$ 2,50</div>
+            {{ else }}
+                <div class="alimento{{ if .border }}--original{{ end }}">
+                    {{ if .name }}
+                        <div class="alimento__title">{{ .name | safeHTML }}</div>
+                    {{ end }}
+                    {{ if .extra }}
+                        <div class="alimento__extra">{{ .extra }}</div>
+                    {{ end }}
+                    {{ if .price }}
+                        <div class="alimento__price">R$ {{ .price | lang.NumFmt 2 }}</div>
+                    {{ end }}
+                    {{ if .singleprice }}
+                    <div class="alimento__single-price">R$ {{ .singleprice | lang.NumFmt 2 }}</div>
+                    {{ end }}
+                    {{ if .description }}
+                        <div class="alimento__description">{{ .description }}</div>
+                    {{ end }}
                 </div>
-            </div>
-        </div>
+            {{ end }}
+        {{ end }}
 
     </div>
+
+
+
+
+        <!-- <div class="alimento--original"> -->
+        <!--     <div class="alimento__title"><span>Slider</span> Original</div> -->
+        <!--     <div class="alimento__price">R$ 8,00</div> -->
+        <!--     <div class="alimento__description">pão/ burger/ queijo/ cebola</div> -->
+        <!-- </div> -->
+        
+        <!-- <div class="alimento"> -->
+        <!--     <div class="alimento__title"><span>Slider</span> Americano</div> -->
+        <!--     <div class="alimento__price">R$ 10,00</div> -->
+        <!--     <div class="alimento__description">pão/ burger/ queijo/ cebola/ picles</div> -->
+        <!-- </div> -->
+        
+        <!-- <div class="alimento"> -->
+        <!--     <div class="alimento__title"><span>Slider</span> Salada</div> -->
+        <!--     <div class="alimento__price">R$ 10,00</div> -->
+        <!--     <div class="alimento__description">pão/ burger/ queijo/ cebola/ rúcula/ toMATE</div> -->
+        <!-- </div> -->
+        
+        <!-- <div class="alimento"> -->
+        <!--     <div class="alimento__title"><span>Slider</span> Bacon</div> -->
+        <!--     <div class="alimento__price">R$ 10,00</div> -->
+        <!--     <div class="alimento__description">pão/ burger/ queijo/ cebola/ bacon</div> -->
+        <!-- </div> -->
+        
+        <!-- <h3>Extras</h3> -->
+        
+        <!-- <div class="alimento"> -->
+        <!--     <div class="alimento__extra">pão brioche | salada | bacon | picles</div> -->
+        <!--     <div class="alimento__price">R$ 2,00</div> -->
+        <!-- </div> -->
+        
+        <!-- <div class="alimento"> -->
+        <!--     <div class="alimento__extra">maionese (da casa - contém lactose)</div> -->
+        <!--     <div class="alimento__price">R$ 2,50</div> -->
+        <!-- </div> -->
+        
+        <!-- <h3>Bebidas</h3> -->
+        
+        <!-- <div class="alimento"> -->
+        <!--     <div class="alimento__title">Chopp Larger</div> -->
+        <!--     <div class="alimento__price">R$ 10,00</div> -->
+        <!--     <div class="alimento__description">( burgman ) - 400 ml</div> -->
+        <!-- </div> -->
+        
+        <!-- <div class="alimento"> -->
+        <!--     <div class="alimento__title">Chopp IPA</div> -->
+        <!--     <div class="alimento__price">R$ 12,00</div> -->
+        <!--     <div class="alimento__description">( burgman ) - 400 ml</div> -->
+        <!-- </div> -->
+        
+        <!-- <div class="alimento__group"> -->
+        <!--     <div> -->
+        <!--         <h3>Fritas</h3> -->
+        <!--         <div class="alimento"> -->
+        <!--             <div class="alimento__fritas">R$ 9,00</div> -->
+        <!--         </div> -->
+        <!--     </div> -->
+        <!--     <div> -->
+        <!--         <h3>Sobremesa</h3> -->
+        <!--         <div class="alimento"> -->
+        <!--             <div class="alimento__extra">bolo gelado</div> -->
+        <!--             <div class="alimento__price">R$ 2,50</div> -->
+        <!--         </div> -->
+        <!--     </div> -->
+        <!-- </div> -->
+
 
     <div class="cardapio__background angle--both-left-right">
     </div>

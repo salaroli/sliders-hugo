@@ -276,7 +276,7 @@ h3 {
         color: cores(dark--24);
         text-transform: uppercase;
     }
-    @include e(fritas) {
+    @include e(single-price) {
         grid-column: 1 / -1;
         font-weight: $font-weight--bold;
         font-size: 1.1em;
