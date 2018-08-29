@@ -1,0 +1,9 @@
+ingredientes:
+    - name: "Pão"
+      description: "Pão fofinho, leve, no tamanho certo!"
+    - name: "Cebola"
+      description: "O segredo de tudo!  É o vapor da cebola que cozinha a carne na medida certa, derrete o queijo e aromatiza o pão!"
+    - name: "Carne"
+      description: "Um fino disco de carne de um blend único para a suculência perfeita."
+    - name: "Queijo"
+      description: "Uma fatia do queijo que melhor combina com os outros 3 ingredientes juntos!"
