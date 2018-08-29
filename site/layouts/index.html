@@ -112,76 +112,6 @@
 
     </div>
 
-
-
-
-        <!-- <div class="alimento--original"> -->
-        <!--     <div class="alimento__title"><span>Slider</span> Original</div> -->
-        <!--     <div class="alimento__price">R$ 8,00</div> -->
-        <!--     <div class="alimento__description">pão/ burger/ queijo/ cebola</div> -->
-        <!-- </div> -->
-        
-        <!-- <div class="alimento"> -->
-        <!--     <div class="alimento__title"><span>Slider</span> Americano</div> -->
-        <!--     <div class="alimento__price">R$ 10,00</div> -->
-        <!--     <div class="alimento__description">pão/ burger/ queijo/ cebola/ picles</div> -->
-        <!-- </div> -->
-        
-        <!-- <div class="alimento"> -->
-        <!--     <div class="alimento__title"><span>Slider</span> Salada</div> -->
-        <!--     <div class="alimento__price">R$ 10,00</div> -->
-        <!--     <div class="alimento__description">pão/ burger/ queijo/ cebola/ rúcula/ toMATE</div> -->
-        <!-- </div> -->
-        
-        <!-- <div class="alimento"> -->
-        <!--     <div class="alimento__title"><span>Slider</span> Bacon</div> -->
-        <!--     <div class="alimento__price">R$ 10,00</div> -->
-        <!--     <div class="alimento__description">pão/ burger/ queijo/ cebola/ bacon</div> -->
-        <!-- </div> -->
-        
-        <!-- <h3>Extras</h3> -->
-        
-        <!-- <div class="alimento"> -->
-        <!--     <div class="alimento__extra">pão brioche | salada | bacon | picles</div> -->
-        <!--     <div class="alimento__price">R$ 2,00</div> -->
-        <!-- </div> -->
-        
-        <!-- <div class="alimento"> -->
-        <!--     <div class="alimento__extra">maionese (da casa - contém lactose)</div> -->
-        <!--     <div class="alimento__price">R$ 2,50</div> -->
-        <!-- </div> -->
-        
-        <!-- <h3>Bebidas</h3> -->
-        
-        <!-- <div class="alimento"> -->
-        <!--     <div class="alimento__title">Chopp Larger</div> -->
-        <!--     <div class="alimento__price">R$ 10,00</div> -->
-        <!--     <div class="alimento__description">( burgman ) - 400 ml</div> -->
-        <!-- </div> -->
-        
-        <!-- <div class="alimento"> -->
-        <!--     <div class="alimento__title">Chopp IPA</div> -->
-        <!--     <div class="alimento__price">R$ 12,00</div> -->
-        <!--     <div class="alimento__description">( burgman ) - 400 ml</div> -->
-        <!-- </div> -->
-        
-        <!-- <div class="alimento__group"> -->
-        <!--     <div> -->
-        <!--         <h3>Fritas</h3> -->
-        <!--         <div class="alimento"> -->
-        <!--             <div class="alimento__fritas">R$ 9,00</div> -->
-        <!--         </div> -->
-        <!--     </div> -->
-        <!--     <div> -->
-        <!--         <h3>Sobremesa</h3> -->
-        <!--         <div class="alimento"> -->
-        <!--             <div class="alimento__extra">bolo gelado</div> -->
-        <!--             <div class="alimento__price">R$ 2,50</div> -->
-        <!--         </div> -->
-        <!--     </div> -->
-        <!-- </div> -->
-
-
     <div class="cardapio__background angle--both-left-right">
     </div>
 
@@ -201,12 +131,12 @@
 <div id="contato" class="gallery">
 
     <div class="gallery__text">
-        <h4>Siga nas redes sociais</h4>
-        <p>Slider é uma receita americana, é a perfeita combinação feita com apenas quatro ingredientes.</p>
+        <h4>{{ .Params.followtext }}</h4>
+        <p>{{ .Params.followdescription }}</p>
         <div class="gallery__social">
-            <a href="https://www.instagram.com/sliders/"><img src="/img/instagram.png" targets="_blank" alt=""></a>
-            <a href="https://www.facebook.com/slidershamburgueria/" targets="_blank"><img src="/img/facebook.png" alt=""></a>
-            <!-- <a href="" targets="_blank"><img src="/img/twitter.png" alt=""></a> -->
+            {{ range .Site.Data.social.socialmedia }}
+            <a href="{{ .url }}"><img src="{{ .img }}" targets="_blank" alt=""></a>
+            {{ end }}
         </div>
     </div>
 
