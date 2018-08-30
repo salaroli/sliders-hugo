@@ -119,12 +119,11 @@
 
 <h3 id="delivery">Delivery</h3>
 <div class="delivery">
+    {{ range .Site.Data.delivery.empresas }}
     <div>
-        <img src="/img/ifood.png" alt="">
+        <img src="{{ .img }}" alt="">
     </div>
-    <div>
-        <img src="/img/rappi.png" alt="">
-    </div>
+    {{ end }}
 </div>
 
 
@@ -162,15 +161,14 @@
     
     <div class="map">
         <div class="map__rua">
-            Rua Haddock Lobo, 891 - Cerqueira César, São Paulo/SP - 01414-001
+            {{ .Params.endereco | markdownify }}
         </div>
         <div class="map__telefone">
-            (11) 3061-2524
+            {{ .Params.telefone | markdownify }}
         </div>
         <div class="map__data">
-            TERÇA À QUINTA | 18h - 23h<br>
-            SEXTA | 18h - 00h<br>
-            SÁBADO | 12h - 00h </div>
+            {{ .Params.horario | safeHTML }}
+        </div>
     </div>
 
 </div>
