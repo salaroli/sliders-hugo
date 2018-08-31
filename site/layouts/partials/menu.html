@@ -1,0 +1,12 @@
+<div class="menu">
+    <div class="menu__img">
+        <img src="/img/close.png" alt=""/>
+    </div>
+    <ul>
+        {{ range .Site.Data.navbar.menu }}
+        <li><a href="{{ .url }}">{{ .title }}</a></li>
+        {{ end }}
+    </ul>
+</div>
+
+

@@ -1,0 +1,19 @@
+<div class="header">
+    <div class="navigation">
+        <div>
+            <img class="navigation__logo" src="/img/logo_white.png" alt="">
+        </div>
+        <img class="navigation__dehaze" src="/img/dehaze.png" alt=""/>
+        <ul>
+            {{ range .Site.Data.navbar.menu }}
+            <li><a href="{{ .url }}">{{ .title }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+    <div class="wrapper">
+        <h1 class="header__text">{{ .Params.herotext | markdownify }}</h1>
+    </div>
+    <div class="seta"></div>
+</div>
+
+

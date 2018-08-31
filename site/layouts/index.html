@@ -1,34 +1,7 @@
-{{ partial "header" . }}
+{{ define "main" }}
 
-<div class="menu">
-    <div class="menu__img">
-        <img src="/img/close.png" alt=""/>
-    </div>
-    <ul>
-        {{ range .Site.Data.navbar.menu }}
-        <li><a href="{{ .url }}">{{ .title }}</a></li>
-        {{ end }}
-    </ul>
-</div>
-
-<div class="header">
-    <div class="navigation">
-        <div>
-            <img class="navigation__logo" src="/img/logo_white.png" alt="">
-        </div>
-        <img class="navigation__dehaze" src="/img/dehaze.png" alt=""/>
-        <ul>
-            {{ range .Site.Data.navbar.menu }}
-            <li><a href="{{ .url }}">{{ .title }}</a></li>
-            {{ end }}
-        </ul>
-    </div>
-    <div class="wrapper">
-        <h1 class="header__text">{{ .Params.herotext | markdownify }}</h1>
-    </div>
-    <div class="seta"></div>
-</div>
-
+{{ partial "menu" . }}
+{{ partial "hero" . }}
 
 <div id="conceito" class="conceito">
     <div class="burger">
@@ -40,144 +13,12 @@
         <div class="alert">{{ .Params.dica | markdownify }}</div>
     </div>
 </div>
-
 <div class="horizontal-line"></div>
 
-<div class="receita">
+{{ partial "receita" . }}
+{{ partial "cardapio" . }}
+{{ partial "delivery" . }}
+{{ partial "contato" . }}
+{{ partial "localizacao" (dict "endereco" .Params.endereco "telefone" .Params.telefone "horario" .Params.horario) }}
 
-    {{ range $index, $content := .Site.Data.receita.ingredientes }}
-    <div class="ingrediente">
-        <div class="ingrediente__num">{{ add $index 1 }}</div>
-        <div class="ingrediente__title">{{ $content.name }}</div>
-        {{ $content.description }}
-    </div>
-    {{ end }}
-
-</div>
-
-<h3 id="cardapio">Cardápio</h3>
-
-<div class="cardapio">
-
-    <div class="cardapio__wrapper">
-
-        {{ range .Site.Data.cardapio.alimentos }}
-            {{ if .title }}
-            <h3>{{ .title }}</h3>
-            {{ else if .group }}
-                <div class="alimento__group">
-                    {{ range .group }}
-                    <div>
-                        <h3>{{ .title }}</h3>
-                        <div class="alimento">
-                            {{ if .singleprice }}
-                            <div class="alimento__single-price">R$ {{ .singleprice | lang.NumFmt 2 }}</div>
-                            {{ end }}
-                            {{ if .name }}
-                                <div class="alimento__title">{{ .name | safeHTML }}</div>
-                            {{ end }}
-                            {{ if .extra }}
-                                <div class="alimento__extra">{{ .extra }}</div>
-                            {{ end }}
-                            {{ if .price }}
-                                <div class="alimento__price">R$ {{ .price | lang.NumFmt 2 }}</div>
-                            {{ end }}
-                            {{ if .description }}
-                                <div class="alimento__description">{{ .description }}</div>
-                            {{ end }}
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
-            {{ else }}
-                <div class="alimento{{ if .border }}--original{{ end }}">
-                    {{ if .name }}
-                        <div class="alimento__title">{{ .name | safeHTML }}</div>
-                    {{ end }}
-                    {{ if .extra }}
-                        <div class="alimento__extra">{{ .extra }}</div>
-                    {{ end }}
-                    {{ if .price }}
-                        <div class="alimento__price">R$ {{ .price | lang.NumFmt 2 }}</div>
-                    {{ end }}
-                    {{ if .singleprice }}
-                    <div class="alimento__single-price">R$ {{ .singleprice | lang.NumFmt 2 }}</div>
-                    {{ end }}
-                    {{ if .description }}
-                        <div class="alimento__description">{{ .description }}</div>
-                    {{ end }}
-                </div>
-            {{ end }}
-        {{ end }}
-
-    </div>
-
-    <div class="cardapio__background angle--both-left-right">
-    </div>
-
-</div>
-
-<h3 id="delivery">Delivery</h3>
-<div class="delivery">
-    {{ range .Site.Data.delivery.empresas }}
-    <div>
-        <img src="{{ .img }}" alt="">
-    </div>
-    {{ end }}
-</div>
-
-
-<div id="contato" class="gallery">
-
-    <div class="gallery__text">
-        <h4>{{ .Params.followtext }}</h4>
-        <p>{{ .Params.followdescription }}</p>
-        <div class="gallery__social">
-            {{ range .Site.Data.social.socialmedia }}
-            <a href="{{ .url }}"><img src="{{ .img }}" targets="_blank" alt=""></a>
-            {{ end }}
-        </div>
-    </div>
-
-    <div class="gallery__images">
-        <img src="/img/IMG_1.png" alt=""/>
-        <img src="/img/IMG_2.png" alt=""/>
-        <img src="/img/IMG_3.png" alt=""/>
-        <img src="/img/IMG_4.png" alt=""/>
-        <img src="/img/IMG_5.png" alt=""/>
-        <img src="/img/IMG_6.png" alt=""/>
-        <img src="/img/IMG_7.png" alt=""/>
-        <img src="/img/IMG_8.png" alt=""/>
-        <img src="/img/IMG_9.png" alt=""/>
-        <img src="/img/IMG_10.png" alt=""/>
-    </div>
-</div>
-
-<h3 id="localizacao">Localização</h3>
-
-<div class="localizacao">
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14628.945998654302!2d-46.672382930224636!3d-23.559948100000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce598b87b36645%3A0xda9c276b4d6348c1!2sSliders+Hamburgueria!5e0!3m2!1sen!2sbr!4v1535327221087" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-    
-    <div class="map">
-        <div class="map__rua">
-            {{ .Params.endereco | markdownify }}
-        </div>
-        <div class="map__telefone">
-            {{ .Params.telefone | markdownify }}
-        </div>
-        <div class="map__data">
-            {{ .Params.horario | safeHTML }}
-        </div>
-    </div>
-
-</div>
-
-<div class="footer">
-    <div>
-        <img src="img/logo.png" alt=""/>
-    </div>
-    <p>&copy; Copyright 2018 Sliders. All Rights Reserved</p>
-</div>
-
-{{ partial "footer" . }}
+{{ end }}

@@ -1,0 +1,23 @@
+<div id="contato" class="gallery">
+    <div class="gallery__text">
+        <h4>{{ .Params.followtext }}</h4>
+        <p>{{ .Params.followdescription }}</p>
+        <div class="gallery__social">
+            {{ range .Site.Data.social.socialmedia }}
+            <a href="{{ .url }}"><img src="{{ .img }}" targets="_blank" alt=""></a>
+            {{ end }}
+        </div>
+    </div>
+    <div class="gallery__images">
+        <img src="/img/IMG_1.png" alt=""/>
+        <img src="/img/IMG_2.png" alt=""/>
+        <img src="/img/IMG_3.png" alt=""/>
+        <img src="/img/IMG_4.png" alt=""/>
+        <img src="/img/IMG_5.png" alt=""/>
+        <img src="/img/IMG_6.png" alt=""/>
+        <img src="/img/IMG_7.png" alt=""/>
+        <img src="/img/IMG_8.png" alt=""/>
+        <img src="/img/IMG_9.png" alt=""/>
+        <img src="/img/IMG_10.png" alt=""/>
+    </div>
+</div>
