@@ -1,7 +1,7 @@
 <h3 id="cardapio">Cardápio</h3>
 <div class="cardapio">
     <div class="cardapio__wrapper">
-        {{ range .Site.Data.cardapio.alimentos }}
+        {{ range .cardapio }}
             {{ if .title }}
             <h3>{{ .title }}</h3>
             {{ else if .group }}

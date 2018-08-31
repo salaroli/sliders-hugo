@@ -59,14 +59,13 @@ li {
     }
 }
 
-.header {
+.hero {
     color: white;
     position: relative;
     padding: 10px $padding 50px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(/img/IMG_hero.png);
     @include e(text) {
         @include breakpoint($bp-small-3) {
             width: 70%;

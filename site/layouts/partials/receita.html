@@ -1,5 +1,5 @@
 <div class="receita">
-    {{ range $index, $content := .Site.Data.receita.ingredientes }}
+    {{ range $index, $content := .ingredientes }}
     <div class="ingrediente">
         <div class="ingrediente__num">{{ add $index 1 }}</div>
         <div class="ingrediente__title">{{ $content.name }}</div>

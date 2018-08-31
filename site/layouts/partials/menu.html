@@ -3,7 +3,7 @@
         <img src="/img/close.png" alt=""/>
     </div>
     <ul>
-        {{ range .Site.Data.navbar.menu }}
+        {{ range .menu }}
         <li><a href="{{ .url }}">{{ .title }}</a></li>
         {{ end }}
     </ul>

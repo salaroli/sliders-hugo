@@ -1,24 +1,25 @@
 {{ define "main" }}
 
-{{ partial "menu" . }}
-{{ partial "hero" . }}
+{{ partial "menu" (dict "menu" .Params.navbar) }}
+{{ partial "hero" (dict "menu" .Params.navbar "title" .Params.hero.title "img" .Params.hero.img "logo" .Params.hero.logo) }}
 
 <div id="conceito" class="conceito">
     <div class="burger">
-        <img src="/img/burger.png" alt=""/>
+        <img src="{{ .Params.conceito.img }}" alt=""/>
     </div>
     <div class="descricao">
-        <h2>{{ .Params.calltoaction | markdownify }}</h2>
+        <h2>{{ .Params.conceito.title | markdownify }}</h2>
         {{ .Content }}
-        <div class="alert">{{ .Params.dica | markdownify }}</div>
+        <div class="alert"><b>Vai a dica - </b>{{ .Params.conceito.dica }}</div>
     </div>
 </div>
 <div class="horizontal-line"></div>
 
-{{ partial "receita" . }}
-{{ partial "cardapio" . }}
-{{ partial "delivery" . }}
-{{ partial "contato" . }}
-{{ partial "localizacao" (dict "endereco" .Params.endereco "telefone" .Params.telefone "horario" .Params.horario) }}
+{{ partial "receita" (dict "ingredientes" .Params.receita ) }}
+{{ partial "cardapio" (dict "cardapio" .Params.cardapio ) }}
+{{ partial "delivery" (dict "empresas" .Params.delivery ) }}
+{{ partial "contato" (dict "title" .Params.social.title "description" .Params.social.description "medias" .Params.social.medias "background" .Params.social.background) }}
+{{ partial "localizacao" (dict "endereco" .Params.localizacao.endereco "telefone" .Params.localizacao.telefone "horario" .Params.localizacao.horario) }}
+{{ partial "footer" (dict "logo" .Params.feet.logo "text" .Params.feet.text) }} 
 
 {{ end }}

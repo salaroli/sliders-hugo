@@ -1,9 +1,9 @@
 
     <div class="footer">
         <div>
-            <img src="img/logo.png" alt=""/>
+            <img src="{{ .logo }}" alt=""/>
         </div>
-        <p>&copy; Copyright 2018 Sliders. All Rights Reserved</p>
+        <p>{{ .text | safeHTML }}</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"

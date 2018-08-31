@@ -1,17 +1,17 @@
-<div class="header">
+<div class="hero" style="background-image: url({{ .img }});">
     <div class="navigation">
         <div>
-            <img class="navigation__logo" src="/img/logo_white.png" alt="">
+            <img class="navigation__logo" src="{{ .logo }}" alt="">
         </div>
         <img class="navigation__dehaze" src="/img/dehaze.png" alt=""/>
         <ul>
-            {{ range .Site.Data.navbar.menu }}
+            {{ range .menu }}
             <li><a href="{{ .url }}">{{ .title }}</a></li>
             {{ end }}
         </ul>
     </div>
     <div class="wrapper">
-        <h1 class="header__text">{{ .Params.herotext | markdownify }}</h1>
+        <h1 class="hero__text">{{ .title | markdownify }}</h1>
     </div>
     <div class="seta"></div>
 </div>
