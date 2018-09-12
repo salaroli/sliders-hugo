@@ -112,19 +112,40 @@ li {
 .seta {
     position: absolute;
     background-color: cores(primary);
+    z-index: 100;
     height: 50px;
     box-shadow: 0px 2px 2px 0px cores(dark--24),
                 0px 0px 2px 0px cores(dark--12);
     width: 50px;
     border-radius: 100000px;
-    bottom: -5px;
+    // top: -40px;
     right: calc(50% - 25px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30% 30%;
     background-image: url(/img/arrow.png);
+    top: calc(-100vw/10);
+    @include breakpoint(600px) {
+        top: calc(-100vw/12.5);
+    }
+    @include breakpoint(800px) {
+        top: calc(-100vw/15);
+    }
+    @include breakpoint(1000px) {
+        top: calc(-100vw/17.5);
+    }
+    @include breakpoint(1200px) {
+        top: calc(-100vw/20);
+    }
+    @include breakpoint(1400px) {
+        top: calc(-100vw/22.5);
+    }
+    @include breakpoint(1600px) {
+        top: calc(-100vw/25);
+    }
 }
 .conceito {
+    position: relative;
     @extend .wrapper;
     align-items: center;
     @include breakpoint($bp-med) {

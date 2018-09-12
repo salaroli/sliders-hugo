@@ -56,14 +56,14 @@ cardapio:
       price: 10.00
       description: "( burgman ) - 400 ml"
     - name: "Chopp IPA"
-      price: 10.00
+      price: 12.00
       description: "( burgman ) - 400 ml"
     - group: 
         - title: "Fritas"
           singleprice: 9.00
         - title: Sobremesa
           extra: "bolo gelado"
-          price: 2.50
+          price: 6.00
 delivery:
     - img: "/img/ifood.png" 
     - img: "/img/rappi.png" 
@@ -87,7 +87,7 @@ social:
         - img: "/img/IMG_9.png"
         - img: "/img/IMG_10.png"
 localizacao:
-    endereco: "Rua Haddock Lobo, 891 - Cerqueira César, São Paulo/SP - 01414-001"
+    endereco: "Rua Haddock Lobo, 893 - Cerqueira César, São Paulo/SP - 01414-001"
     telefone: "(11) 3061-2524"
     horario: "TERÇA À QUINTA | 18h - 23h<br>SEXTA | 18h - 00h<br> SÁBADO | 12h - 00h"
 feet:
