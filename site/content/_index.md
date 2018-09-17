@@ -15,7 +15,7 @@ navbar:
 hero:
     title: "Para todos os gostos, para todas as fomes, do tamanho certo."
     logo: /img/logo_white.png
-    img: /img/IMG_hero.png
+    img: /img/IMG_hero.jpg
 conceito: 
     img: /img/burger.png
     title: "Burger tradicional, simples, clássico!"
