@@ -43,9 +43,6 @@ cardapio:
     - name: "<span>Slider</span> Bacon"
       price: 10.00
       description: "pão/ burger/ queijo/ cebola/ bacon"
-    - name: "<span>Slider</span> Bacon"
-      price: 10.00
-      description: "pão/ burger/ queijo/ cebola/ bacon"
     - title: Extras
     - extra: "pão brioche | salada | bacon | picles"
       price: 2.00
