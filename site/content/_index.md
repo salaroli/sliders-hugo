@@ -15,7 +15,7 @@ navbar:
 hero:
     title: "Para todos os gostos, para todas as fomes, do tamanho certo."
     logo: /img/logo_white.png
-    img: /img/IMG_hero.png
+    img: /img/IMG_hero.jpg
 conceito: 
     img: /img/burger.png
     title: "Burger tradicional, simples, clássico!"
@@ -73,16 +73,16 @@ social:
         - img: "/img/facebook.png" 
           url: "https://www.facebook.com/slidershamburgueria/" 
     background:
-        - img: "/img/IMG_1.png"
-        - img: "/img/IMG_2.png"
-        - img: "/img/IMG_3.png"
-        - img: "/img/IMG_4.png"
-        - img: "/img/IMG_5.png"
-        - img: "/img/IMG_6.png"
-        - img: "/img/IMG_7.png"
-        - img: "/img/IMG_8.png"
-        - img: "/img/IMG_9.png"
-        - img: "/img/IMG_10.png"
+        - img: "/img/IMG_1.jpg"
+        - img: "/img/IMG_2.jpg"
+        - img: "/img/IMG_3.jpg"
+        - img: "/img/IMG_4.jpg"
+        - img: "/img/IMG_5.jpg"
+        - img: "/img/IMG_6.jpg"
+        - img: "/img/IMG_7.jpg"
+        - img: "/img/IMG_8.jpg"
+        - img: "/img/IMG_9.jpg"
+        - img: "/img/IMG_10.jpg"
 localizacao:
     endereco: "Rua Haddock Lobo, 893 - Cerqueira César, São Paulo/SP - 01414-001"
     telefone: "(11) 3061-2524"
