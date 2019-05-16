@@ -43,8 +43,14 @@ cardapio:
     - name: "<span>Slider</span> Bacon"
       price: 10.00
       description: "pão/ burger/ queijo/ cebola/ bacon"
+    - name: "<span>Slider</span> Duplo"
+      price: 14.00
+      description: "pão/ 2x burger/ 2x queijo/ 2x cebola"
+    - name: "<span>Slider</span> Shitake"
+      price: 12.00
+      description: "pão/ shitake/ abobrinha empanada/ queijo/ cebola"
     - title: Extras
-    - extra: "pão brioche | salada | bacon | picles"
+    - extra: "salada | bacon | picles"
       price: 2.00
     - extra: "maionese (da casa - contém lactose)"
       price: 2.50
@@ -64,6 +70,7 @@ cardapio:
 delivery:
     - img: "/img/ifood.png" 
     - img: "/img/rappi.png" 
+    - img: "/img/james.svg" 
 social:
     title: "Siga nas redes sociais"
     description: "Slider é uma receita americana, é a perfeita combinação feita com apenas quatro ingredientes."
@@ -86,7 +93,7 @@ social:
 localizacao:
     endereco: "Rua Haddock Lobo, 893 - Cerqueira César, São Paulo/SP - 01414-001"
     telefone: "(11) 3061-2524"
-    horario: "TERÇA À QUINTA | 18h - 23h<br>SEXTA | 18h - 00h<br> SÁBADO | 12h - 00h"
+    horario: "TERÇA À QUINTA | 12h - 16h e 18h - 23h<br>SEXTA | 12h - 16h e  18h - 00h<br> SÁBADO | 12h - 00h"
 feet:
     logo: "img/logo.png"
     text: "&copy; Copyright 2018 Sliders. All Rights Reserved"
