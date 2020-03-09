@@ -49,6 +49,8 @@ cardapio:
     - name: "<span>Slider</span> Shitake"
       price: 12.00
       description: "pão/ shitake/ abobrinha empanada/ queijo/ cebola"
+    - name: "Fritas"
+      price: 9.00
     - title: Extras
     - extra: "salada | bacon | picles"
       price: 2.00
@@ -61,12 +63,9 @@ cardapio:
     - name: "Chopp IPA"
       price: 12.00
       description: "( burgman ) - 400 ml"
-    - group: 
-        - title: "Fritas"
-          singleprice: 9.00
-        - title: Sobremesa
-          extra: "bolo gelado"
-          price: 6.00
+    - name: "Chá Gelado"
+      price: 9.00
+      description: "refil"
 delivery:
     - img: "/img/ifood.png" 
     - img: "/img/rappi.png" 
@@ -79,6 +78,8 @@ social:
           url: "https://www.instagram.com/sliders/"
         - img: "/img/facebook.png" 
           url: "https://www.facebook.com/slidershamburgueria/" 
+        - img: "/img/email.png" 
+          url: "mailto:contato@sliders.com.br" 
     background:
         - img: "/img/IMG_1.jpg"
         - img: "/img/IMG_2.jpg"
@@ -91,9 +92,15 @@ social:
         - img: "/img/IMG_9.jpg"
         - img: "/img/IMG_10.jpg"
 localizacao:
-    endereco: "Rua Haddock Lobo, 893 - Cerqueira César, São Paulo/SP - 01414-001"
-    telefone: "(11) 3061-2524"
-    horario: "TERÇA À QUINTA | 12h - 16h e 18h - 23h<br>SEXTA | 12h - 16h e  18h - 00h<br> SÁBADO | 12h - 00h"
+    - endereco: "Rua Haddock Lobo, 893 - Cerqueira César"
+      telefone: "(11) 93296-4582"
+      horario: "TERÇA À QUINTA | 12h - 16h e 18h - 23h<br>SEXTA | 12h - 16h e  18h - 00h<br> SÁBADO | 12h - 00h"
+    - endereco: "Rua Gomes de Carvalho, 1146 - Vila Olímpia"
+      telefone: "(11) 97377-5658"
+      horario: "SEGUNDA À SEXTA | 11h - 15h e 17h - 23h<br>SÁBADO | 12h - 23h"
+    - endereco: "Rua Major Sertório 764 - Vila Buarque"
+      telefone: "(11) 94221-4582"
+      horario: "BREVE"
 feet:
     logo: "img/logo.png"
     text: "&copy; Copyright 2018 Sliders. All Rights Reserved"
