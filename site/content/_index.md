@@ -100,7 +100,7 @@ localizacao:
       horario: "SEGUNDA À SEXTA | 11h - 15h e 17h - 23h<br>SÁBADO | 12h - 23h"
     - endereco: "Rua Major Sertório 764 - Vila Buarque"
       telefone: "(11) 94221-4582"
-      horario: "BREVE"
+      horario: "TERÇA À DOMINGO| 17h - 23h"
 feet:
     logo: "img/logo.png"
     text: "&copy; Copyright 2018 Sliders. All Rights Reserved"
