@@ -1,0 +1,13 @@
+navbar:
+    - title: Início
+      url: /
+    - title: Conceito
+      url: /#conceito
+    - title: Cardápio
+      url: /#cardapio
+    - title: Delivery
+      url: https://delivery.sliders.com.br/
+    - title: Contato
+      url: /#contato
+    - title: Localização
+      url: /#localizacao

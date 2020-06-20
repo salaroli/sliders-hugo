@@ -1,0 +1,112 @@
+backend:
+  name: git-gateway
+
+media_folder: "site/static/img/" # Folder where user uploaded files should go
+public_folder: "/img"
+publish_mode: editorial_workflow
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "pages"
+    label: "Pages"
+    files:
+        - label: "Home"
+          name: "Home"
+          file: "site/content/_index.md"
+          fields:
+              - {label: "Navbar", name: "navbar", widget: hidden, required: false, fields: [
+                  {label: "Transparent", name: "transparent", widget: hidden, default: true, required: false},
+              ]}
+              - {label: "Hero", name: "hero", widget: object, required: false, fields: [
+                  {label: "Title", name: "h1", widget: string, required: false},
+                  {label: "Image", name: "img", widget: image, required: false},
+              ]}
+              - {label: "Como funciona?", name: "comoFunciona", widget: object, required: false, fields: [
+                  {label: "Sub", name: "h2", widget: string, required: false},
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Cards", name: "cards", widget: list, allow_add: true, required: false, fields: [
+                      {label: "Image", name: "img", widget: image, required: false},
+                      {label: "Text", name: "text", widget: string, required: false}]}
+              ]}
+              - {label: "Impacto", name: "impacto", widget: object, required: false, fields: [
+                  {label: "Sub", name: "h2", widget: string, required: false},
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Image", name: "img", widget: image, required: false},
+                  {label: "Cards", name: "cards", widget: list, allow_add: false, required: false, fields: [
+                      {label: "Title", name: "title", widget: string, required: false},
+                      {label: "Text", name: "text", widget: string, required: false}]},
+                  {label: "Button", name: "btn", widget: object, required: false, fields: [
+                      {label: "Text", name: "text", widget: string, required: false},
+                      {label: "URL", name: "url", widget: string, required: false}]}
+              ]}
+              - {label: "Projetos", name: "projetos", widget: object, required: false, fields: [
+                  {label: "Sub", name: "h2", widget: string, required: false},
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Cards", name: "cards", widget: list, allow_add: false, required: false, fields: [
+                      {label: "Image", name: "image", widget: image, required: false, media_library: {
+                              config: {
+                                  default_transformations: [{
+                                      fetch_format: auto,
+                                      aspect_ratio: 1.5,
+                                      gravity: center,
+                                      quality: auto,
+                                      crop: fill
+                                      }]}}},
+                      {label: "Title", name: "title", widget: string, required: false},
+                      {label: "Description", name: "description", widget: text, required: false},
+                          {label: "Buttons", name: "btn", widget: list, allow_add: true, required: false, fields: [
+                              {label: "Text", name: "text", widget: string, required: false},
+                              {label: "Url", name: "url", widget: string, required: false},
+                              {label: "Class", name: "class", widget: select, options:["ghost", "primary"], required: false}]}
+                      ]}
+              ]}
+              - {label: "História", name: "historia", widget: list, allow_add: false, required: false, fields: [
+                  {label: "Sub", name: "h2", widget: string, required: false},
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Text", name: "text", widget: text, required: false},
+                  {label: "Image", name: "img", widget: image, required: false},
+                  {label: "Video", name: "video", widget: string, required: false},
+                  {label: "Button", name: "btn", widget: object, required: false, fields: [
+                      {label: "Text", name: "text", widget: string, required: false},
+                      {label: "URL", name: "url", widget: string, required: false}]}
+              ]}
+              - {label: "Por que doar?", name: "why", widget: object, required: false, fields: [
+                  {label: "Sub", name: "h2", widget: string, required: false},
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Cards", name: "cards", widget: list, allow_add: true, required: false, fields: [
+                      {label: "Image", name: "img", widget: image, required: false},
+                      {label: "Text", name: "text", widget: string, required: false}]},
+                  {label: "Button", name: "btn", widget: object, required: false, fields: [
+                      {label: "Text", name: "text", widget: string, required: false},
+                      {label: "URL", name: "url", widget: string, required: false}]}
+              ]}
+              - {label: "Depoimentos", name: "depoimentos", widget: object, required: false, fields: [
+                  {label: "Sub", name: "h2", widget: string, required: false},
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Depoimento", name: "depoimento", widget: list, allow_add: true, required: false, fields: [
+                      {label: "Text", name: "text", widget: string, required: false},
+                      {label: "Author", name: "author", widget: string, required: false},
+                      {label: "Job", name: "job", widget: text, required: false},
+                      {label: "Image", name: "img", widget: image, required: false}]}
+              ]}
+              - {label: "Blog", name: "blog", widget: object, required: false, fields: [
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Cor de Fundo", name: "backgroundColor", required: false, widget: select, options:["grey", ""]},
+                  {label: "Button", name: "btn", widget: object, required: false, fields: [
+                      {label: "Text", name: "text", widget: string, required: false},
+                      {label: "URL", name: "url", widget: string, required: false}]}
+              ]}
+              - {label: "Call to action", name: "cta", widget: object, required: false, fields: [
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Button", name: "btn", widget: object, required: false, fields: [
+                      {label: "Text", name: "text", widget: string, required: false},
+                      {label: "URL", name: "url", widget: string, required: false}]}
+              ]}
+              - {label: "Doadores", name: "doadores", widget: object, required: false, fields: [
+                  {label: "Title", name: "h3", widget: string, required: false},
+                  {label: "Image", name: "img", widget: image, required: false},
+                  {label: "Text", name: "text", widget: text, required: false},
+                  {label: "Button", name: "btn", widget: object, required: false, fields: [
+                      {label: "Text", name: "text", widget: string, required: false},
+                      {label: "URL", name: "url", widget: string, required: false}]}
+              ]}
+

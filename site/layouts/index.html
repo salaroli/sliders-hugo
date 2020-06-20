@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-{{ partial "menu" (dict "menu" .Params.navbar) }}
-{{ partial "hero" (dict "menu" .Params.navbar "title" .Params.hero.title "img" .Params.hero.img "logo" .Params.hero.logo) }}
+{{ partial "navbar/navbar" (dict "menu" $.Site.Data.navbar.navbar) }}
+{{ partial "hero/hero" (dict "menu" $.Site.Data.navbar.navbar "title" .Params.hero.title "img" .Params.hero.img "logo" .Params.hero.logo) }}
 
 <div id="conceito" class="conceito">
   <div class="seta"></div>
@@ -16,11 +16,11 @@
 </div>
 <div class="horizontal-line"></div>
 
-{{ partial "receita" (dict "ingredientes" .Params.receita ) }}
-{{ partial "cardapio" (dict "cardapio" .Params.cardapio ) }}
-{{ partial "delivery" (dict "empresas" .Params.delivery ) }}
-{{ partial "contato" (dict "title" .Params.social.title "description" .Params.social.description "medias" .Params.social.medias "background" .Params.social.background) }}
-{{ partial "localizacao" (dict "localizacao" .Params.localizacao) }}
-{{ partial "footer" (dict "logo" .Params.feet.logo "text" .Params.feet.text) }}
+{{ partial "receita/receita" (dict "ingredientes" .Params.receita ) }}
+{{ partial "cardapio/cardapio" (dict "cardapio" .Params.cardapio ) }}
+{{ partial "delivery/delivery" (dict "empresas" .Params.delivery ) }}
+{{ partial "contato/contato" (dict "title" .Params.social.title "description" .Params.social.description "medias" .Params.social.medias "background" .Params.social.background) }}
+{{ partial "localizacao/localizacao" (dict "localizacao" .Params.localizacao) }}
+{{ partial "base/footer" (dict "logo" .Params.feet.logo "text" .Params.feet.text) }}
 
 {{ end }}
