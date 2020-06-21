@@ -2,7 +2,7 @@ baseurl = "/"
 contentDir = "content"
 languageCode = "en-us"
 languageLang = "en"
-title = "Sliders Hamburgueria"
+title = "Sliders"
 permalinks = "/:title/"
 
 # RSS, categories and tags disabled for an easy start
