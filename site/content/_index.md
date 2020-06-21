@@ -1,17 +1,4 @@
 ---
-navbar:
-    - title: Início
-      url: /
-    - title: Conceito
-      url: /#conceito
-    - title: Cardápio
-      url: /#cardapio
-    - title: Delivery
-      url: /#delivery
-    - title: Contato
-      url: /#contato
-    - title: Localização
-      url: /#localizacao
 hero:
     title: "Para todos os gostos, para todas as fomes, do tamanho certo."
     logo: /img/logo_white.png
