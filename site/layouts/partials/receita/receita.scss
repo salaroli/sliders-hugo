@@ -1,0 +1,29 @@
+.ingrediente {
+  @include e(group) {
+    @extend .wrapper;
+    display: grid;
+    @include breakpoint($bp-med) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint($bp-xl) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
+    position: relative;
+    margin: 1em 50px;
+    @include e(num) {
+        position: absolute;
+        font-size: 5em;
+        font-weight: $font-weight--heavy;
+        left: -32px;
+        top: -16px;
+        z-index: -1000px;
+        color: cores(dark--12);
+    }
+    @include e(title) {
+        color: cores(primary);
+        font-size: 1.5em;
+        font-weight: $font-weight--bold;
+        margin-bottom: 0.5em;
+    }
+}

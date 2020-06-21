@@ -1,0 +1,63 @@
+.contato {
+    position: relative;
+    @include e(images) {
+        border-bottom: 10px solid cores(primary);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        z-index: 100;
+        @include pseudo(after, 100%, 100%) {
+            background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
+        }
+        @include breakpoint($bp-med) {
+            @include pseudo(after, 100%, 100%) {
+                background-image: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0));
+            }
+        }
+        @include breakpoint($bp-small-2) {
+            grid-template-columns: repeat(3, 1fr);
+            :nth-child(1) {
+                display: none;
+            }
+        }
+        @include breakpoint($bp-med) {
+            grid-template-columns: repeat(4, 1fr);
+            :nth-child(2) {
+                display: none;
+            }
+        }
+        @include breakpoint($bp-xl) {
+            grid-template-columns: repeat(5, 1fr);
+            :nth-child(1) {
+                display: block;
+            }
+            :nth-child(2) {
+                display: block;
+            }
+        }
+    }
+    @include e(text) {
+        z-index: 10000;
+        position: absolute;
+        color: white;
+        max-width: 500px;
+        padding-top: 3em;
+        @include breakpoint($bp-small-2) {
+            padding-top: 5em;
+        }
+        @include breakpoint(1000px) {
+            // max-width: 1000px;
+            left: calc((100vw - 1000px)/2);
+        }
+    }
+    @include e(social) {
+        display: flex;
+        margin: $padding;
+        @include breakpoint($bp-small-2) {
+            margin: 2em $padding;
+        }
+        img {
+            width: 24px;
+            margin-right: $padding;
+        }
+    }
+}

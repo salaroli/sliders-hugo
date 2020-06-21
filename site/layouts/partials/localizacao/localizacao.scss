@@ -1,0 +1,57 @@
+.localizacao {
+    @extend .wrapper;
+    max-width: 800px;
+    @include breakpoint($bp-med) {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: flex;
+        align-items: center;
+        div,
+        iframe {
+            flex: 1;
+        }
+    }
+}
+
+.map {
+    position: relative;
+    padding: 1em $padding;
+    div {
+        margin:  1em 0;
+        font-size: 0.7em;
+        padding-left: 24px;
+        @include breakpoint($bp-small-2) {
+            font-size: 1em;
+        }
+        @include breakpoint($bp-small-2) {
+            font-size: 1em;
+        }
+    }
+    @include e(rua) {
+        @include pseudo(before, 14px, 14px) {
+            background-image: url(/img/rua.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            left: $padding;
+        }
+    }
+    @include e(telefone) {
+        @include pseudo(before, 14px, 14px) {
+            background-image: url(/img/telefone.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            left: $padding;
+        }
+    }
+    @include e(data) {
+        @include pseudo(before, 14px, 14px) {
+            background-image: url(/img/data.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            left: $padding;
+        }
+    }
+}

@@ -70,7 +70,7 @@ delivery:
     - img: "/img/ifood.png" 
     - img: "/img/rappi.png" 
     - img: "/img/james.svg" 
-social:
+contato:
     title: "Siga nas redes sociais"
     description: "Slider é uma receita americana, é a perfeita combinação feita com apenas quatro ingredientes."
     medias:

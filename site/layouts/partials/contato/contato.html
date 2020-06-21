@@ -1,16 +1,16 @@
-<div id="contato" class="gallery">
-    <div class="gallery__text">
-        <h4>{{ .title }}</h4>
-        <p>{{ .description }}</p>
-        <div class="gallery__social">
-            {{ range .medias }}
-            <a href="{{ .url }}"><img src="{{ .img }}" targets="_blank" alt=""></a>
-            {{ end }}
-        </div>
+<div id="contato" class="contato">
+  <div class="contato__text">
+    <h4>{{ .title }}</h4>
+    <p>{{ .description }}</p>
+    <div class="contato__social">
+      {{ range .medias }}
+      <a href="{{ .url }}"><img src="{{ .img }}" targets="_blank" alt=""></a>
+      {{ end }}
     </div>
-    <div class="gallery__images">
-        {{ range .background }}
-        <img src="{{ .img }}" alt=""/>
-        {{ end }}
-    </div>
+  </div>
+  <div class="contato__images">
+    {{ range .background }}
+    <img src="{{ .img }}" alt="" />
+    {{ end }}
+  </div>
 </div>

@@ -1,9 +1,9 @@
-<div class="receita">
-    {{ range $index, $content := .ingredientes }}
-    <div class="ingrediente">
-        <div class="ingrediente__num">{{ add $index 1 }}</div>
-        <div class="ingrediente__title">{{ $content.name }}</div>
-        {{ $content.description }}
-    </div>
-    {{ end }}
+<div class="ingrediente__group">
+  {{ range $index, $content := .ingredientes }}
+  <div class="ingrediente">
+    <div class="ingrediente__num">{{ add $index 1 }}</div>
+    <div class="ingrediente__title">{{ $content.name }}</div>
+    {{ $content.description }}
+  </div>
+  {{ end }}
 </div>

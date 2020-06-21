@@ -57,7 +57,9 @@ $w: null,
 $h: null) {
   @if $el=='before' or $el=='after' {
     &:#{$el} {
-      @extend %pseudos;
+      display: block;
+      content: ''; 
+      position: absolute;
       width: $w;
       height: $h;
       @content;
@@ -71,7 +73,9 @@ $h: null) {
 @mixin shadow($color: transparent, $size: 100px) {
     position: relative;
     &:before {
-        @extend %pseudos;
+        display: block;
+        content: ''; 
+        position: absolute;
         width: 80%;
         max-width: calc(100% - #{$size});
         height: 50%;

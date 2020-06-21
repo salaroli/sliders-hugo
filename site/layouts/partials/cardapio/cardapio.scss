@@ -1,0 +1,79 @@
+.cardapio {
+    position: relative;
+    // padding:  10vw $padding 10px;
+    overflow: visible;
+    @include e(background) {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: cores(dark--6);
+        width: 100vw;
+        height: 100%;
+    }
+    @include e(wrapper) {
+        padding:  50px $padding 20px;
+        position: relative;
+        z-index: 100;
+        @extend .wrapper;
+        max-width: 800px;
+    }
+}
+
+.alimento {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row-gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 25px 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px 0 cores(dark--12);
+    span {
+        color:  cores(dark--disabled);
+    }
+    @include m(original) {
+        @extend .alimento;
+        border: 2px solid cores(primary);
+    }
+    @include e(title) {
+        font-weight: $font-weight--bold;
+        font-size: 1.1em;
+    }
+    @include e(price) {
+        font-weight: $font-weight--bold;
+        font-size: 1.1em;
+        justify-self: end;
+    }
+    @include e(description) {
+        grid-column: 1 / -1;
+        font-size: 0.7em;
+        font-weight: $font-weight--bold;
+        color: cores(dark--24);
+        text-transform: uppercase;
+    }
+    @include e(extra) {
+        font-size: 0.7em;
+        font-weight: $font-weight--bold;
+        color: cores(dark--24);
+        text-transform: uppercase;
+    }
+    @include e(single-price) {
+        grid-column: 1 / -1;
+        font-weight: $font-weight--bold;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    @include e(group) {
+        @include breakpoint($bp-med) {
+            display: flex;;
+            :first-child {
+                margin-right: $padding;
+            }
+            div {
+                flex: 1;
+            }
+        }
+    }
+}

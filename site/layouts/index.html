@@ -3,24 +3,13 @@
 {{ partial "navbar/navbar" (dict "menu" $.Site.Data.navbar.navbar) }}
 {{ partial "hero/hero" (dict "menu" $.Site.Data.navbar.navbar "title" .Params.hero.title "img" .Params.hero.img "logo" .Params.hero.logo) }}
 
-<div id="conceito" class="conceito">
-  <div class="seta"></div>
-  <div class="burger">
-    <img src="{{ .Params.conceito.img }}" alt="" />
-  </div>
-  <div class="descricao">
-    <h2>{{ .Params.conceito.title | markdownify }}</h2>
-    {{ .Content }}
-    <div class="alert"><b>Vai a dica - </b>{{ .Params.conceito.dica }}</div>
-  </div>
-</div>
-<div class="horizontal-line"></div>
+{{ partial "conceito/conceito" (dict "conceito" .Params.conceito "content" .Content ) }}
 
 {{ partial "receita/receita" (dict "ingredientes" .Params.receita ) }}
 {{ partial "cardapio/cardapio" (dict "cardapio" .Params.cardapio ) }}
 {{ partial "delivery/delivery" (dict "empresas" .Params.delivery ) }}
-{{ partial "contato/contato" (dict "title" .Params.social.title "description" .Params.social.description "medias" .Params.social.medias "background" .Params.social.background) }}
+{{ partial "contato/contato" (dict "title" .Params.contato.title "description" .Params.contato.description "medias" .Params.contato.medias "background" .Params.contato.background) }}
 {{ partial "localizacao/localizacao" (dict "localizacao" .Params.localizacao) }}
-{{ partial "base/footer" (dict "logo" .Params.feet.logo "text" .Params.feet.text) }}
+{{ partial "footer/footer" (dict "logo" .Params.feet.logo "text" .Params.feet.text) }}
 
 {{ end }}

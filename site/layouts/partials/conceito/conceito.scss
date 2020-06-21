@@ -1,0 +1,74 @@
+.conceito {
+  position: relative;
+  @extend .wrapper;
+  align-items: center;
+  @include breakpoint($bp-med) {
+    display: flex;
+    padding: 1em 0;
+  }
+  @include breakpoint($bp-med) {
+    padding: 1em 0;
+  }
+  @include e(descricao) {
+    flex: 1;
+    @include breakpoint($bp-med) {
+      max-width: 50%;
+    }
+  }
+  @include e(burger) {
+    flex: 1;
+    order: 2;
+    width: calc(100vw - 90px);
+    height: calc(100vw - 90px);
+    max-width: 300px;
+    max-height: 300px;
+    margin: 30px auto 10px;
+  }
+  @include e(seta) {
+    position: absolute;
+    background-color: cores(primary);
+    z-index: 100;
+    height: 50px;
+    box-shadow: 0px 2px 2px 0px cores(dark--24), 0px 0px 2px 0px cores(dark--12);
+    width: 50px;
+    border-radius: 100000px;
+    // top: -40px;
+    right: calc(50% - 25px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30% 30%;
+    background-image: url(/img/arrow.png);
+    top: calc(-100vw / 10);
+    @include breakpoint(600px) {
+      top: calc(-100vw / 12.5);
+    }
+    @include breakpoint(800px) {
+      top: calc(-100vw / 15);
+    }
+    @include breakpoint(1000px) {
+      top: calc(-100vw / 17.5);
+    }
+    @include breakpoint(1200px) {
+      top: calc(-100vw / 20);
+    }
+    @include breakpoint(1400px) {
+      top: calc(-100vw / 22.5);
+    }
+    @include breakpoint(1600px) {
+      top: calc(-100vw / 25);
+    }
+  }
+  @include e(alert) {
+    background-color: cores(base);
+    margin: 1em $padding;
+    padding: 1em 5px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  @include e(horizontal-line) {
+    margin: 1em $padding;
+    border-bottom: 1px solid cores(dark--12);
+  }
+}

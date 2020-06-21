@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: cores(dark--6);
+    align-items: center;
+    div {
+        margin: 2em auto;
+        width: 100px;
+        @include breakpoint($bp-small-2) {
+            margin: 2em $padding;
+        }
+    }
+    p {
+        color: cores(dark--secondary);
+        font-size: 0.7em;
+        text-align: center;
+    }
+    @include breakpoint($bp-small-2) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+

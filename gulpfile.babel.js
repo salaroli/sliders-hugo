@@ -32,11 +32,11 @@ gulp.task("build-preview", ["scss", "js", "fonts"], (cb) => buildSite(cb, hugoAr
 gulp.task("scss", () => (
   gulp.src("./src/scss/*.scss")
     .pipe(sass({
-      outputStyle:  "nested",
+      outputStyle: "nested",
       precision: 10,
       includePaths: ["node_modules"],
     }))
-    .pipe(postcss([ autoprefixer() ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(cssNano())
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
@@ -72,10 +72,11 @@ gulp.task("server", ["hugo", "scss", "js", "fonts"], () => {
       baseDir: "./dist"
     }
   });
-  watch("./src/js/**/*.js", () => { gulp.start(["js"]) });
-  watch("./src/scss/**/*.scss", () => { gulp.start(["scss"]) });
-  watch("./src/fonts/**/*", () => { gulp.start(["fonts"]) });
-  watch("./site/**/*", () => { gulp.start(["hugo"]) });
+  watch("./src/js/**/*.js", () => {gulp.start(["js"])});
+  watch("./src/scss/**/*.scss", () => {gulp.start(["scss"])});
+  watch("./site/layouts/partials/**/*.scss", () => {gulp.start(["scss"])});
+  watch("./src/fonts/**/*", () => {gulp.start(["fonts"])});
+  watch("./site/**/*", () => {gulp.start(["hugo"])});
 });
 
 /**

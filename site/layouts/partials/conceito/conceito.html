@@ -1,0 +1,12 @@
+<div id="conceito" class="conceito">
+  <div class="conceito__seta"></div>
+  <div class="conceito__burger">
+    <img src="{{ .conceito.img }}" alt="" />
+  </div>
+  <div class="conceito__descricao">
+    <h2>{{ .conceito.title | markdownify }}</h2>
+    {{ .content }}
+    <div class="conceito__alert"><b>Vai a dica - </b>{{ .conceito.dica }}</div>
+  </div>
+</div>
+<div class="conceito__horizontal-line"></div>
