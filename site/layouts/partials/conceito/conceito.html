@@ -5,7 +5,7 @@
   </div>
   <div class="conceito__descricao">
     <h2>{{ .conceito.title | markdownify }}</h2>
-    {{ .content }}
+    <p>{{ .conceito.content | safeHTML }}</p>
     <div class="conceito__alert"><b>Vai a dica - </b>{{ .conceito.dica }}</div>
   </div>
 </div>

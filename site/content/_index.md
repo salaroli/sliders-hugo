@@ -20,6 +20,7 @@ conceito:
     img: /img/burger.png
     title: "Burger tradicional, simples, clássico!"
     dica: "mantenha sempre a cebola!"
+    content: "Slider é uma receita de burger americana, é a perfeita combinação feita com apenas quatro ingredientes.<br><br>O segredo está em sua preparação equilibrada - cada ingrediente tem a hora de entrar e, quando juntos, são cozidos e aromatizados com o vapor da cebola."
 receita: 
     - name: "Pão"
       description: "Pão fofinho, leve, no tamanho certo!"
@@ -34,6 +35,7 @@ cardapio:
       price: 8.00
       description: "pão/ burger/ queijo/ cebola"
       border: true
+      title:  
     - name: "<span>Slider</span> Americano"
       price: 10.00
       description: "pão/ burger/ queijo/ cebola/ picles"
@@ -68,8 +70,11 @@ cardapio:
       description: "refil"
 delivery:
     - img: "/img/ifood.png" 
+      url:
     - img: "/img/rappi.png" 
+      url:
     - img: "/img/james.svg" 
+      url:
 contato:
     title: "Siga nas redes sociais"
     description: "Slider é uma receita americana, é a perfeita combinação feita com apenas quatro ingredientes."
@@ -105,6 +110,3 @@ feet:
     logo: "img/logo.png"
     text: "&copy; Copyright 2018 Sliders. All Rights Reserved"
 ---
-Slider é uma receita de burger americana, é a perfeita combinação feita com apenas quatro ingredientes.
-  
-O segredo está em sua preparação equilibrada - cada ingrediente tem a hora de entrar e, quando juntos, são cozidos e aromatizados com o vapor da cebola.

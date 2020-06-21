@@ -1,57 +1,30 @@
 <h3 id="cardapio">Cardápio</h3>
 <div class="cardapio">
-    <div class="cardapio__wrapper">
-        {{ range .cardapio }}
-            {{ if .title }}
-            <h3>{{ .title }}</h3>
-            {{ else if .group }}
-                <div class="alimento__group">
-                    {{ range .group }}
-                    <div>
-                        <h3>{{ .title }}</h3>
-                        <div class="alimento">
-                            {{ if .singleprice }}
-                            <div class="alimento__single-price">R$ {{ .singleprice | lang.NumFmt 2 }}</div>
-                            {{ end }}
-                            {{ if .name }}
-                                <div class="alimento__title">{{ .name | safeHTML }}</div>
-                            {{ end }}
-                            {{ if .extra }}
-                                <div class="alimento__extra">{{ .extra }}</div>
-                            {{ end }}
-                            {{ if .price }}
-                                <div class="alimento__price">R$ {{ .price | lang.NumFmt 2 }}</div>
-                            {{ end }}
-                            {{ if .description }}
-                                <div class="alimento__description">{{ .description }}</div>
-                            {{ end }}
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
-            {{ else }}
-                <div class="alimento{{ if .border }}--original{{ end }}">
-                    {{ if .name }}
-                        <div class="alimento__title">{{ .name | safeHTML }}</div>
-                    {{ end }}
-                    {{ if .extra }}
-                        <div class="alimento__extra">{{ .extra }}</div>
-                    {{ end }}
-                    {{ if .price }}
-                        <div class="alimento__price">R$ {{ .price | lang.NumFmt 2 }}</div>
-                    {{ end }}
-                    {{ if .singleprice }}
-                    <div class="alimento__single-price">R$ {{ .singleprice | lang.NumFmt 2 }}</div>
-                    {{ end }}
-                    {{ if .description }}
-                        <div class="alimento__description">{{ .description }}</div>
-                    {{ end }}
-                </div>
-            {{ end }}
-        {{ end }}
+  <div class="cardapio__wrapper">
+    {{ range .cardapio }}
+    {{ if .title }}
+    <h3>{{ .title }}</h3>
+    {{ else }}
+    <div class="alimento{{ if .border }}--original{{ end }}">
+      {{ if .name }}
+      <div class="alimento__title">{{ .name | safeHTML }}</div>
+      {{ end }}
+      {{ if .extra }}
+      <div class="alimento__extra">{{ .extra }}</div>
+      {{ end }}
+      {{ if .price }}
+      <div class="alimento__price">R$ {{ .price | lang.NumFmt 2 }}</div>
+      {{ end }}
+      {{ if .singleprice }}
+      <div class="alimento__single-price">R$ {{ .singleprice | lang.NumFmt 2 }}</div>
+      {{ end }}
+      {{ if .description }}
+      <div class="alimento__description">{{ .description }}</div>
+      {{ end }}
     </div>
-    <div class="cardapio__background angle--both-left-right">
-    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+  <div class="cardapio__background angle--both-left-right">
+  </div>
 </div>
-
-
