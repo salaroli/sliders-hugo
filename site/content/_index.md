@@ -52,10 +52,10 @@ cardapio:
   - extra: salada | bacon | picles
     price: 2
   - extra: maionese (da casa - contém lactose)
-    price: 2.5
+    price: 1
   - title: Bebidas
   - description: ( burgman ) - 400 ml
-    name: Chopp Larger
+    name: Chopp Lager
     price: 10
   - description: ( burgman ) - 400 ml
     name: Chopp IPA
