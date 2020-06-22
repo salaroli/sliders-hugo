@@ -51,7 +51,7 @@ cardapio:
   - extra: salada | bacon | picles
     price: 2
   - extra: maionese (da casa - contém lactose)
-    price: 2.5
+    price: 3
   - title: Bebidas
   - description: ( burgman ) - 400 ml
     name: Chopp Lager
@@ -63,9 +63,10 @@ cardapio:
     name: Chá Gelado
     price: 9
 delivery:
+  - img: /img/logo.png
+    url: 'https://delivery.sliders.com.br'
   - img: /img/ifood.png
   - img: /img/rappi.png
-  - img: /img/james.svg
 contato:
   background:
     - img: /img/IMG_1.jpg
