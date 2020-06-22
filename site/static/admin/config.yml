@@ -30,10 +30,10 @@ collections: # A list of collections the CMS should be able to edit
               - {label: "Cardapio", name: "cardapio", widget: list, allow_add: true, required: false, fields: [
                   {label: "Nome", name: "name", widget: text, required: false},
                   {label: "Borda", name: "border", widget: boolean, required: false},
-                  {label: "Titulo (só coloque se for título)", name: "title", widget: string, required: false},
                   {label: "Preço", name: "price", widget: number, required: false},
                   {label: "Description", name: "description", widget: string, required: false},
                   {label: "Extra", name: "extra", widget: string, required: false},
+                  {label: "Titulo (só coloque se for título)", name: "title", widget: string, required: false},
               ]}
               - {label: "Delivery", name: "delivery", widget: list, allow_add: true, required: false, fields: [
                   {label: "Image", name: "img", widget: image, required: false},
