@@ -54,7 +54,7 @@ cardapio:
     price: 2.5
   - title: Bebidas
   - description: ( burgman ) - 400 ml
-    name: Chopp Larger
+    name: Chopp Lager
     price: 10
   - description: ( burgman ) - 400 ml
     name: Chopp IPA
