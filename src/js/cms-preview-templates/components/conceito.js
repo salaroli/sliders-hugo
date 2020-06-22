@@ -5,7 +5,7 @@ export default class Conceito extends React.Component {
     return (
       <React.Fragment>
         <div className="conceito">
-          <div className="conceito__seta"></div>
+          {/* <div className="conceito__seta"></div> */}
           <div className="conceito__burger">
             <img src={this.props.img} alt="" />
           </div>
