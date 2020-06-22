@@ -30,6 +30,7 @@ cardapio:
     description: pão/ burger/ queijo/ cebola
     name: <span>Slider</span> Original
     price: 8
+    title: ''
   - description: pão/ burger/ queijo/ cebola/ picles
     name: <span>Slider</span> Americano
     price: 10
@@ -63,9 +64,10 @@ cardapio:
     name: Chá Gelado
     price: 9
 delivery:
+  - img: /img/logo.png
+    url: delivery.sliders.com.br
   - img: /img/ifood.png
   - img: /img/rappi.png
-  - img: /img/james.svg
 contato:
   background:
     - img: /img/IMG_1.jpg
