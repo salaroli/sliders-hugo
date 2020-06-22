@@ -53,11 +53,12 @@
         display: flex;
         margin: $padding;
         @include breakpoint($bp-small-2) {
-            margin: 2em $padding;
+            margin: 2em $padding*2;
+            margin-left: $padding;
         }
         img {
-            width: 24px;
-            margin-right: $padding;
+            width: 48px;
+            margin-right: $padding*2;
         }
     }
 }
