@@ -1,8 +1,12 @@
 <h3 id="delivery">Delivery</h3>
 <div class="delivery">
-    {{ range .empresas }}
-    <div>
-        <img src="{{ .img }}" alt="">
-    </div>
+  {{ range .empresas }}
+  <div>
+    {{ if .url}}
+    <a href="{{ .url }}"><img src="{{ .img }}" alt=""></a>
+    {{ else }}
+    <img src="{{ .img }}" alt="">
     {{ end }}
+  </div>
+  {{ end }}
 </div>
