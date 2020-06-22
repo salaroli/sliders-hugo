@@ -65,7 +65,7 @@ cardapio:
     price: 9
 delivery:
   - img: /img/logo.png
-    url: delivery.sliders.com.br
+    url: 'https://delivery.sliders.com.br'
   - img: /img/ifood.png
   - img: /img/rappi.png
 contato:
