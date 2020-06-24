@@ -93,14 +93,14 @@ contato:
 localizacao:
   - endereco: 'Rua Haddock Lobo, 893 - Cerqueira César'
     horario: >-
-      TERÇA À QUINTA | 12h - 16h e 18h - 23h<br>SEXTA | 12h - 16h e  18h -
-      00h<br> SÁBADO | 12h - 00h
+      TERÇA À QUINTA | 11h - 23h<br>SEXTA | 11h - 00h<br> SÁBADO | 12h - 00h<br>
+      DOMINGO | 18h - 23h
     telefone: (11) 93296-4582
   - endereco: 'Rua Gomes de Carvalho, 1146 - Vila Olímpia'
-    horario: SEGUNDA À SEXTA | 11h - 15h e 17h - 23h<br>SÁBADO | 12h - 23h
+    horario: SEGUNDA À SEXTA | 11h - 23h<br>SÁBADO | 12h - 23h<br> DOMINGO | 18h - 23h
     telefone: (11) 97377-5658
   - endereco: Rua Major Sertório 764 - Vila Buarque
-    horario: TERÇA À DOMINGO| 17h - 23h
+    horario: TERÇA À DOMINGO| 18h - 23h
     telefone: (11) 94221-4582
 feet:
   logo: img/logo.png
