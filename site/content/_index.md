@@ -59,9 +59,18 @@ cardapio:
   - description: ( burgman ) - 400 ml
     name: Chopp IPA
     price: 12
-  - description: refil
+  - description: 400 ML
     name: Chá Gelado
-    price: 9
+    price: 6
+  - description: Coca-Cola / Coca-Cola Zero / Guaraná / Guaraná Zero
+    name: Refrigerante
+    price: 5
+  - description: sem gás / com gás
+    name: Água
+    price: 5
+  - description: 'Suco Prats, 100% natural, pasteurizado'
+    name: Suco de Laranja
+    price: 5
 delivery:
   - img: /img/logo.png
     url: 'https://delivery.sliders.com.br'
