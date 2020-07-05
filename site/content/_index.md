@@ -8,7 +8,9 @@ conceito:
     Slider é uma receita de burger americana, é a perfeita combinação feita com
     apenas quatro ingredientes.<br><br>O segredo está em sua preparação
     equilibrada - cada ingrediente tem a hora de entrar e, quando juntos, são
-    cozidos e aromatizados com o vapor da cebola.
+    cozidos e aromatizados com o vapor da cebola.<br><br>Com apenas 50g de
+    carne, seu tamanho menor que os tradicionais faz com que eles se ajustem a
+    sua fome e ao seu gosto! Coma de quantidade sem medo!
   dica: mantenha sempre a cebola!
   img: /img/burger.png
   title: 'Burger tradicional, simples, clássico!'
@@ -27,19 +29,19 @@ receita:
     name: Queijo
 cardapio:
   - border: true
-    description: pão/ burger/ queijo/ cebola
+    description: pão / burger 50g / queijo / cebola
     name: <span>Slider</span> Original
     price: 8
-  - description: pão/ burger/ queijo/ cebola/ picles
+  - description: pão / burger 50g / queijo / cebola / picles
     name: <span>Slider</span> Americano
     price: 10
-  - description: pão/ burger/ queijo/ cebola/ rúcula/ tomate
+  - description: pão / burger 50g / queijo / cebola / rúcula / tomate
     name: <span>Slider</span> Salada
     price: 10
-  - description: pão/ burger/ queijo/ cebola/ bacon
+  - description: pão / burger 50g / queijo / cebola / bacon
     name: <span>Slider</span> Bacon
     price: 10
-  - description: pão/ 2x burger/ 2x queijo/ 2x cebola
+  - description: pão / 2x burger 50g / 2x queijo / 2x cebola
     name: <span>Slider</span> Duplo
     price: 14
   - description: pão/ shitake/ abobrinha empanada/ queijo/ cebola
