@@ -47,21 +47,23 @@ cardapio:
   - description: pão/ shitake/ abobrinha empanada/ queijo/ cebola
     name: <span>Slider</span> Shitake
     price: 12
-  - name: Fritas
-    price: 9
+  - name: Fritas <span>Pequena</span>
+    price: 7
+  - name: Fritas <span>Grande</span>
+    price: 12
   - title: Extras
   - extra: salada | bacon | picles
     price: 2
   - extra: maionese (da casa - contém lactose)
     price: 3
   - title: Bebidas
-  - description: ( burgman ) - 400 ml
+  - description: ( burgman ) - 440 ml
     name: Chopp Lager
     price: 10
-  - description: ( burgman ) - 400 ml
+  - description: ( burgman ) - 440 ml
     name: Chopp IPA
     price: 12
-  - description: 400 ML
+  - description: 440 Ml
     name: Chá Gelado
     price: 6
   - description: Coca-Cola / Coca-Cola Zero / Guaraná / Guaraná Zero
@@ -73,6 +75,33 @@ cardapio:
   - description: 'Suco Prats, 100% natural, pasteurizado'
     name: Suco de Laranja
     price: 5
+  - title: Combos
+  - name: 3 x Sliders Originais
+    price: 21
+  - description: Original / Americano / Salada / Bacon
+    name: 3 x Sliders Com Extras
+    price: 27
+  - name: 5 x Sliders Originais
+    price: 33
+  - description: Original / Americano / Salada / Bacon
+    name: 5 x Sliders Com Extras
+    price: 42
+  - name: 10 x Sliders Originais
+    price: 60
+  - description: Original / Americano / Salada / Bacon
+    name: 10 x Sliders Com Extras
+    price: 80
+  - name: 3 x Shitakes
+    price: 33
+  - description: '2 Sliders, Fritas Pequena e 1 Bebida não alcóolicas'
+    name: Combo Individual
+    price: 27
+  - description: '4 sliders, Fritas Grande e 2 bebidas não alcóolicas'
+    name: Combo Casal
+    price: 50
+  - description: '10 Sliders, 2 fritas grandes e 4 bebidas não alcóolicas'
+    name: Combo Família
+    price: 110
 delivery:
   - img: /img/logo.png
     url: 'https://delivery.sliders.com.br'
