@@ -68,7 +68,7 @@ cardapio:
     price: 6
   - description: Coca-Cola / Coca-Cola Zero / Guaraná / Guaraná Zero
     name: Refrigerante
-    price: 5
+    price: 6
   - description: sem gás / com gás
     name: Água
     price: 5
@@ -93,7 +93,7 @@ cardapio:
     price: 80
   - name: 3 x Shitakes
     price: 33
-  - description: '2 Sliders, Fritas Pequena e 1 Bebida não alcóolicas'
+  - description: '2 Sliders, Fritas Pequena e 1 Bebida não alcóolica'
     name: Combo Individual
     price: 27
   - description: '4 sliders, Fritas Grande e 2 bebidas não alcóolicas'
