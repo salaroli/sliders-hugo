@@ -38,7 +38,8 @@ export default class HomePreview extends React.Component {
           cardapio={entry.getIn(["data", "cardapio"])}
         />
         <Delivery
-          empresas={entry.getIn(["data", "delivery"])}
+          title={entry.getIn(["data", "delivery", "title"])}
+          empresas={entry.getIn(["data", "delivery", "empresas"])}
         />
         <Contato
           title={entry.getIn(["data", "contato", "title"])}

@@ -35,10 +35,13 @@ collections: # A list of collections the CMS should be able to edit
                   {label: "Extra", name: "extra", widget: string, required: false},
                   {label: "Titulo (só coloque se for título)", name: "title", widget: string, required: false},
               ]}
-              - {label: "Delivery", name: "delivery", widget: list, allow_add: true, required: false, fields: [
-                  {label: "Image", name: "img", widget: image, required: false},
-                  {label: "Link", name: "url", widget: string, required: false},
-              ]}
+              - {label: "Delivery", name: "delivery", widget: object, required: false, fields: [
+                  {label: "Title", name: "title", widget: string, required: false},
+                  {label: "Empresas", name: "empresas", widget: list, allow_add: true, required: false, fields: [
+                    {label: "Image", name: "img", widget: image, required: false},
+                    {label: "Link", name: "url", widget: string, required: false},
+                  ]}
+                ]}
               - {label: "Contato", name: "contato", widget: object, required: false, fields: [
                   {label: "Título", name: "title", widget: string, required: false},
                   {label: "Descrição", name: "description", widget: text, required: false},
