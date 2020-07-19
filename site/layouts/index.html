@@ -7,7 +7,7 @@
 
 {{ partial "receita/receita" (dict "ingredientes" .Params.receita ) }}
 {{ partial "cardapio/cardapio" (dict "cardapio" .Params.cardapio ) }}
-{{ partial "delivery/delivery" (dict "empresas" .Params.delivery ) }}
+{{ partial "delivery/delivery" (dict "delivery" .Params.delivery ) }}
 {{ partial "contato/contato" (dict "title" .Params.contato.title "description" .Params.contato.description "medias" .Params.contato.medias "background" .Params.contato.background) }}
 {{ partial "localizacao/localizacao" (dict "localizacao" .Params.localizacao) }}
 {{ partial "footer/footer" (dict "logo" .Params.feet.logo "text" .Params.feet.text) }}

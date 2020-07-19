@@ -103,10 +103,12 @@ cardapio:
     name: Combo Família
     price: 110
 delivery:
-  - img: /img/logo.png
-    url: 'https://delivery.sliders.com.br'
-  - img: /img/ifood.png
-  - img: /img/rappi.png
+  title: "Delivery"
+  empresas:
+    - img: /img/logo.png
+      url: 'https://delivery.sliders.com.br'
+    - img: /img/ifood.png
+    - img: /img/rappi.png
 contato:
   background:
     - img: /img/IMG_1.jpg
