@@ -25,6 +25,10 @@ export default class HomePreview extends React.Component {
           title={entry.getIn(["data", "hero", "title"])}
           img={entry.getIn(["data", "hero", "img"])}
         />
+        <Delivery
+          title={entry.getIn(["data", "delivery2", "title"])}
+          empresas={entry.getIn(["data", "delivery2", "empresas"])}
+        />
         <Conceito
           title={entry.getIn(["data", "conceito", "title"])}
           img={entry.getIn(["data", "conceito", "img"])}

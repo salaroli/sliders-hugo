@@ -2,6 +2,7 @@
 
 {{ partial "navbar/navbar" (dict "menu" $.Site.Data.navbar.navbar) }}
 {{ partial "hero/hero" (dict "menu" $.Site.Data.navbar.navbar "title" .Params.hero.title "img" .Params.hero.img "logo" .Params.hero.logo) }}
+{{ partial "delivery/delivery" (dict "delivery" .Params.delivery2 ) }}
 
 {{ partial "conceito/conceito" (dict "conceito" .Params.conceito) }}
 

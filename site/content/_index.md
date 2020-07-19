@@ -3,6 +3,11 @@ hero:
   img: /img/sliders-menor.jpg
   logo: /img/logo_white.png
   title: 'Para todos os gostos, para todas as fomes, do tamanho certo.'
+delivery2:
+  title: "Peça agora!"
+  empresas:
+    - img: /img/logo.png
+      url: 'https://delivery.sliders.com.br'
 conceito:
   content: >-
     Slider é uma receita de burger americana, é a perfeita combinação feita com
