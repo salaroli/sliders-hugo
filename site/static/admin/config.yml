@@ -4,6 +4,15 @@ backend:
 media_folder: "site/static/img/" # Folder where user uploaded files should go
 public_folder: "/img"
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dl1wuj2ch
+    api_key: 127545379349964
+    default_transformations:
+      - fetch_format: auto
+        quality: auto
+
 collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
@@ -14,8 +23,19 @@ collections: # A list of collections the CMS should be able to edit
           fields:
               - {label: "Hero", name: "hero", widget: object, required: false, fields: [
                   {label: "Title", name: "title", widget: string, required: false},
-                  {label: "Logo", name: "logo", widget: image, required: false},
-                  {label: "Image", name: "img", widget: image, required: false},
+                  {label: "Logo", name: "logo", widget: image, required: false, media_library: {
+                    config: {
+                      default_transformations: [{
+                      }]
+                    }
+                  }},
+                  {label: "Image", name: "img", widget: image, required: false, media_library: {
+                    config: {
+                      default_transformations: [{
+                        width: 1200,
+                      }]
+                    }
+                  }},
               ]}
               - {label: "Delivery", name: "delivery2", widget: object, required: false, fields: [
                   {label: "Title", name: "title", widget: string, required: false},
