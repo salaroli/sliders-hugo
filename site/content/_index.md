@@ -100,7 +100,7 @@ cardapio:
     price: 33
   - description: '2 Sliders, Fritas Pequena e 1 Bebida não alcóolica'
     name: Combo Individual
-    price: 26
+    price: 28
   - description: '4 sliders, Fritas Grande e 2 bebidas não alcóolicas'
     name: Combo Casal
     price: 50
