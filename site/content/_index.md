@@ -4,10 +4,10 @@ hero:
   logo: /img/logo_white.png
   title: 'Para todos os gostos, para todas as fomes, do tamanho certo.'
 delivery2:
-  title: "Peça agora!"
   empresas:
     - img: /img/logo.png
       url: 'https://delivery.sliders.com.br'
+  title: Peça agora!
 conceito:
   content: >-
     Slider é uma receita de burger americana, é a perfeita combinação feita com
@@ -76,10 +76,10 @@ cardapio:
     price: 6
   - description: sem gás / com gás
     name: Água
-    price: 5
+    price: 6
   - description: 'Suco Prats, 100% natural, pasteurizado'
     name: Suco de Laranja
-    price: 5
+    price: 4
   - title: Combos
   - name: 3 x Sliders Originais
     price: 21
@@ -90,7 +90,7 @@ cardapio:
     price: 33
   - description: Original / Americano / Salada / Bacon
     name: 5 x Sliders Com Extras
-    price: 42
+    price: 43
   - name: 10 x Sliders Originais
     price: 60
   - description: Original / Americano / Salada / Bacon
@@ -100,7 +100,7 @@ cardapio:
     price: 33
   - description: '2 Sliders, Fritas Pequena e 1 Bebida não alcóolica'
     name: Combo Individual
-    price: 27
+    price: 26
   - description: '4 sliders, Fritas Grande e 2 bebidas não alcóolicas'
     name: Combo Casal
     price: 50
@@ -108,12 +108,12 @@ cardapio:
     name: Combo Família
     price: 110
 delivery:
-  title: "Delivery"
   empresas:
     - img: /img/logo.png
       url: 'https://delivery.sliders.com.br'
     - img: /img/ifood.png
     - img: /img/rappi.png
+  title: Delivery
 contato:
   background:
     - img: /img/IMG_1.jpg
