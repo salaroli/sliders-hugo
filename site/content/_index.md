@@ -79,7 +79,7 @@ cardapio:
     price: 6
   - description: 'Suco Prats, 100% natural, pasteurizado'
     name: Suco de Laranja
-    price: 4
+    price: 6
   - title: Combos
   - name: 3 x Sliders Originais
     price: 21
