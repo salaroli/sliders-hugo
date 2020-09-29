@@ -144,7 +144,9 @@ localizacao:
       DOMINGO | 18h - 23h
     telefone: (11) 93296-4582
   - endereco: 'Rua Gomes de Carvalho, 1146 - Vila Olímpia'
-    horario: SEGUNDA À SEXTA | 11h - 23h<br>SÁBADO | 12h - 23h<br> DOMINGO | 18h - 23h
+    horario: >-
+      DOMINGO À QUARTA | 18h - 23h<br>QUINTA E SEXTA | 11h - 23h<br>SÁBADO | 12h
+      - 23h<br>
     telefone: (11) 97377-5658
   - endereco: Rua Major Sertório 764 - Vila Buarque
     horario: TERÇA À DOMINGO| 18h - 23h
