@@ -145,12 +145,16 @@ localizacao:
     telefone: (11) 93296-4582
   - endereco: 'Rua Gomes de Carvalho, 1146 - Vila Olímpia'
     horario: >-
-      DOMINGO À QUARTA | 18h - 23h<br>QUINTA E SEXTA | 11h - 23h<br>SÁBADO | 12h
+      DOMINGO E SEGUNDA | 18h - 23h<br>TERÇA A SEXTA | 11h - 23h<br>SÁBADO | 12h
       - 23h<br>
     telefone: (11) 97377-5658
   - endereco: Rua Major Sertório 764 - Vila Buarque
     horario: TERÇA À DOMINGO| 18h - 23h
     telefone: (11) 94221-4582
+  - endereco: 'Rua Nanuque, 530 - Vila Leopoldina (EM BREVE)'
+    horario: TERÇA À DOMINGO| 18h - 23h
+  - endereco: 'Rua Tuiuti, 3019 - Tatuapé (EM BREVE)'
+    horario: TERÇA À DOMINGO| 18h - 23h
 feet:
   logo: img/logo.png
   text: '&copy; Copyright 2018 Sliders. All Rights Reserved'
