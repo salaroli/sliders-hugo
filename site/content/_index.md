@@ -153,6 +153,7 @@ localizacao:
     telefone: (11) 94221-4582
   - endereco: 'Rua Nanuque, 530 - Vila Leopoldina (EM BREVE)'
     horario: TERÇA À DOMINGO| 18h - 23h
+    telefone: (11) 97149-5419
   - endereco: 'Rua Tuiuti, 3019 - Tatuapé (EM BREVE)'
     horario: TERÇA À DOMINGO| 18h - 23h
 feet:
