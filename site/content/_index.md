@@ -62,12 +62,15 @@ cardapio:
   - extra: maionese (da casa - contém lactose)
     price: 3
   - title: Bebidas
-  - description: ( burgman ) - 440 ml
+  - description: Burgman  - 440 ml
     name: Chopp Lager
     price: 10
-  - description: ( burgman ) - 440 ml
+  - description: Burgman  - 440 ml
     name: Chopp IPA
     price: 12
+  - description: Black Princess - 355ml
+    name: 'Cerveja Gold Puro Malte '
+    price: 8
   - description: 440 Ml
     name: Chá Gelado
     price: 6
@@ -151,10 +154,10 @@ localizacao:
   - endereco: Rua Major Sertório 764 - Vila Buarque
     horario: TERÇA À DOMINGO| 18h - 23h
     telefone: (11) 94221-4582
-  - endereco: 'Rua Nanuque, 530 - Vila Leopoldina (EM BREVE)'
+  - endereco: 'Rua Nanuque, 530 - Vila Leopoldina'
     horario: TERÇA À DOMINGO| 18h - 23h
     telefone: (11) 97149-5419
-  - endereco: 'Rua Tuiuti, 3019 - Tatuapé (EM BREVE)'
+  - endereco: 'Rua Tuiuti, 3019 - Tatuapé'
     horario: TERÇA À DOMINGO| 18h - 23h
 feet:
   logo: img/logo.png
