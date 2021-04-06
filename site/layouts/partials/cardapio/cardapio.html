@@ -13,7 +13,7 @@
       <div class="alimento__extra">{{ .extra }}</div>
       {{ end }}
       {{ if .price }}
-      <div class="alimento__price">R$ {{ .price | lang.NumFmt 2 }}</div>
+      <div class="alimento__price">R$ {{ .price }}</div>
       {{ end }}
       {{ if .description }}
       <div class="alimento__description">{{ .description }}</div>
