@@ -36,22 +36,22 @@ cardapio:
   - border: true
     description: pão / burger 50g / queijo / cebola
     name: <span>Slider</span> Original
-    price: 8
+    price: '8,90'
   - description: pão / burger 50g / queijo / cebola / picles
     name: <span>Slider</span> Americano
-    price: 10
+    price: '10,90'
   - description: pão / burger 50g / queijo / cebola / rúcula / tomate
     name: <span>Slider</span> Salada
-    price: 10
+    price: '10,90'
   - description: pão / burger 50g / queijo / cebola / bacon
     name: <span>Slider</span> Bacon
-    price: 10
+    price: '10,90'
   - description: pão / 2x burger 50g / 2x queijo / 2x cebola
     name: <span>Slider</span> Duplo
-    price: 14
+    price: '14,90'
   - description: pão/ shitake/ abobrinha empanada/ queijo/ cebola
     name: <span>Slider</span> Shitake
-    price: 12
+    price: '12,90'
   - name: Fritas <span>Pequena</span>
     price: 7
   - name: Fritas <span>Grande</span>
@@ -85,31 +85,31 @@ cardapio:
     price: 6
   - title: Combos
   - name: 3 x Sliders Originais
-    price: 21
+    price: '23,90'
   - description: Original / Americano / Salada / Bacon
     name: 3 x Sliders Com Extras
-    price: 27
+    price: '29,90'
   - name: 5 x Sliders Originais
-    price: 33
+    price: '36,90'
   - description: Original / Americano / Salada / Bacon
     name: 5 x Sliders Com Extras
-    price: 43
+    price: '46,90'
   - name: 10 x Sliders Originais
-    price: 60
+    price: '64,90'
   - description: Original / Americano / Salada / Bacon
     name: 10 x Sliders Com Extras
-    price: 80
+    price: '84,90'
   - name: 3 x Shitakes
-    price: 33
+    price: '35,90'
   - description: '2 Sliders, Fritas Pequena e 1 Bebida não alcóolica'
     name: Combo Individual
-    price: 28
+    price: '29,90'
   - description: '4 sliders, Fritas Grande e 2 bebidas não alcóolicas'
     name: Combo Casal
-    price: 50
+    price: '54,90'
   - description: '10 Sliders, 2 fritas grandes e 4 bebidas não alcóolicas'
     name: Combo Família
-    price: 110
+    price: '119,90'
 delivery:
   empresas:
     - img: /img/logo.png
