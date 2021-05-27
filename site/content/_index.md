@@ -157,6 +157,8 @@ localizacao:
     telefone: (11) 97149-5419
   - endereco: 'Rua Tuiuti, 3019 - Tatuapé'
     horario: TERÇA À DOMINGO| 18h - 23h
+  - endereco: 'Rua Vergueiro, 6166 - Ipiranga (Inauguração 08/06)'
+    horario: TERÇA À DOMINGO| 18h - 23h
 feet:
   logo: img/logo.png
   text: '&copy; Copyright 2018 Sliders. All Rights Reserved'
