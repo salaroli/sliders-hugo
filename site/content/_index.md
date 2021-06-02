@@ -141,11 +141,6 @@ contato:
       url: 'mailto:contato@sliders.com.br'
   title: Siga nas redes sociais
 localizacao:
-  - endereco: 'Rua Haddock Lobo, 893 - Cerqueira César'
-    horario: >-
-      TERÇA À QUINTA | 18h - 23h<br>SEXTA E SÁBADO | 18h - 00h<br> DOMINGO | 18h
-      - 23h
-    telefone: (11) 93296-4582
   - endereco: 'Rua Gomes de Carvalho, 1146 - Vila Olímpia'
     horario: TERÇA À SEXTA | 11h30 - 23h<br>SÁBADO À SEGUNDA | 18h - 23h
     telefone: (11) 97377-5658
@@ -159,6 +154,8 @@ localizacao:
     horario: TERÇA À DOMINGO | 18h - 23h
     telefone: (11) 93335-1480
   - endereco: 'Rua Vergueiro, 6166 - Ipiranga (Inauguração 08/06)'
+    horario: TERÇA À DOMINGO | 18h - 23h
+  - endereco: 'Avenida Alfredo Pujol, 123 - Santana (Inauguração em Julho/2021)'
     horario: TERÇA À DOMINGO | 18h - 23h
 feet:
   logo: img/logo.png
