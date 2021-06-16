@@ -153,8 +153,9 @@ localizacao:
   - endereco: 'Rua Tuiuti, 3019 - Tatuapé'
     horario: TERÇA À DOMINGO | 18h - 23h
     telefone: (11) 93335-1480
-  - endereco: 'Rua Vergueiro, 6166 - Ipiranga (Inauguração 08/06)'
+  - endereco: 'Rua Vergueiro, 6166 - Ipiranga'
     horario: TERÇA À DOMINGO | 18h - 23h
+    telefone: (11) 94124-4663
   - endereco: 'Avenida Alfredo Pujol, 123 - Santana (Inauguração em Julho/2021)'
     horario: TERÇA À DOMINGO | 18h - 23h
 feet:
