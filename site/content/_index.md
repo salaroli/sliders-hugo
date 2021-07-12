@@ -145,7 +145,7 @@ localizacao:
     horario: TERÇA À SEXTA | 11h30 - 23h<br>SÁBADO À SEGUNDA | 18h - 23h
     telefone: (11) 97377-5658
   - endereco: Rua Major Sertório 764 - Vila Buarque
-    horario: TERÇA À DOMINGO| 18h - 23h
+    horario: TERÇA À SÁBADO | 11h30 - 23h<br>DOMINGO | 18h00 - 23h00
     telefone: (11) 94221-4582
   - endereco: 'Rua Nanuque, 530 - Vila Leopoldina'
     horario: TERÇA À DOMINGO| 18h - 23h
