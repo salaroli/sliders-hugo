@@ -158,6 +158,7 @@ localizacao:
     telefone: (11) 94124-4663
   - endereco: 'Avenida Alfredo Pujol, 123 - Santana (Inauguração em Julho/2021)'
     horario: TERÇA À DOMINGO | 18h - 23h
+    telefone: '--'
 feet:
   logo: img/logo.png
   text: '&copy; Copyright 2018 Sliders. All Rights Reserved'
