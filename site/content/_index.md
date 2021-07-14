@@ -7,7 +7,7 @@ delivery2:
   empresas:
     - img: /img/logo.png
       url: 'https://delivery.sliders.com.br'
-  title: Peça agora!
+  title: Peça agora clicando na logo abaixo!
 conceito:
   content: >-
     Slider é uma receita de burger americana, é a perfeita combinação feita com
